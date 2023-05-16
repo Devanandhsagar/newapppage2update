@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="sectiontopichomepage">
+        <div>
+            <h1 class="text-center mt-3">Select the topic</h1>
+            <div class="topic_container mt-5 " onclick="display('sectionagestopic')">
+                <p>Ages</p>
+            </div>
+            <div class="topic_container">
+                <p>Average</p>
+            </div>
+            <div class="topic_container">
+                <p>Speed and Time</p>
+            </div>
+            <div class="topic_container">
+                <p>Boats and Streams</p>
+            </div>
+            <div class="topic_container">
+                <p>Percentage</p>
+            </div>
+        </div>
+    </div>
+    <div id="sectionagestopic">
+        <h1 class="heading_ages">Select type method of Question</h1>
+        <div class="mt-3">
+            <p class="m-5">
+                1) The ratio of the present ages of a mother and her
+                daughter is 7 : 1. Four years ago, the ratio of their
+                ages was 19 : 1. What will be the mother’s age Four
+                years from now ? <button class="button" onclick="display('sectionageques1')" id="Agesquestion1">find</button>
+            </p>
+            <p class="m-5">
+                2)The ages of A and B are in the ratio 6 : 5 and the
+                sum of their ages is 44 years. What will be the ratio
+                of their ages after 8 years ? <button class="button" onclick="display('sectionageques2')" id="Agesquestion2">find</button>
+            </p>
+            <p class="m-5">3)Farah got married 8 years ago. Today her age is
+                2 1/
+                7 times her age at the time of her marriage. At
+                present her daughter‘s age is one-sixth of her age.
+                What was her daughter’s age 3 years ago? <button class="button" onclick="display('sectionageques3')">find</button></p>
+            <p class="m-5">4)The present age of Mr. Sanyal is three times the age
+                of his son. Six years hence, the ratio of their ages
+                will be 5 : 2. What is the present age of Mr. Sanyal? <button class="button" onclick="display('sectionageques4')">find</button></p>
+            <p class="m-5">5)The average of the ages of a man and his daughter
+                is 34 years. If the respective ratio of their ages four
+                years from now is 14 : 5, what is daughter’s present
+                age ? <button class="button" onclick="display('sectionageques5')">find</button></p>
+            <p class="m-5">6)The ratio between the ages of Ram and Mohan is
+                4 : 5 and that between the ages of Ram and Anil is
+                5 : 6. If the sum of the ages of the three is 69 years,
+                what is Mohan’s age ? <button class="button" onclick="display('sectionageques6')">find</button></p>
+            <p class="m-5"> 7)The difference between the present ages of Arun
+                and Deepak is 14 years. Seven years ago, the ratio
+                of their ages was 5 : 7 respectively. What is Deepak’s
+                present age ? <button class="button" onclick="display('sectionageques7')">find</button></p>
+            <p class="m-5">8)The sum of the ages of a daughter and her mother
+                is 56 years. After four years, the age of the mother
+                will be three times that of the daughter. At present
+                their ages are ? <button class="button" onclick="display('sectionageques8')">find</button></p>
+            <p class="m-5">9)Ratio between the ages of Subhash, Prasad and
+                Amar is 3 : 6 : 7. If the difference between the
+                ages of Prasad and Amar is 10 years, then what
+                is the difference between the ages of Subhash and
+                Prasad? <button class="button" onclick="display('sectionageques9')">find</button></p>
+            <p class="m-5">10)A couple has a son and a daughter. The age of the
+                father is four times that of the son and the age of the
+                daughter is one-third of that of her mother. The wife
+                is 6 years younger to her husband and the sister is 3
+                years older than her brother. The mother’s age is
+                ? <button class="button" onclick="display('sectionageques10')">find</button></p>
+            <p class="m-5">11)The present ages of three persons are in the proportion 4 : 7 : 9. Eight years ago, the sum of their ages
+                was 56 years. The present age of the eldest person is ? <button class="button" onclick="display('sectionageques11')">find</button></p>
+            <p class="m-5">12)The sum of the ages of Jayant, Prem and Paras is
+                93 years. Ten years ago, the ratio of their ages was
+                2 : 3 : 4. What is the present age of Paras? <button class="button" onclick="display('sectionageques12')">find</button></p>
+            <p class="m-5">13)TThe sum of the ages of a man and his son is 45
+                years. Five years ago, the product of their ages was
+                34. The man’s age ? <button class="button" onclick="display('sectionageques13')">find</button></p>
+            <p class="m-5">14)The ratio of a man’s age and his son’s age is 7 : 3
+                and the product of their ages is 756. The ratio of
+                their ages after 6 years will be ? <button class="button" onclick="display('sectionageques14')">find</button></p>
+            <p class="m-5">15)Sonal is 40 years old and Nitya is 60 years old. How
+                many years ago was the ratio of their ages 3 : 5 ? <button class="button" onclick="display('sectionageques15')">find</button></p>
+        </div>
+    </div>
+    <div id="sectionageques1">
+        <div class="m-3 pl-3">
+            <input type="text" placeholder="Ratio mother age" id="a1" />
+            <input type="text" placeholder="Ratio daughter age" id="a2" />
+            <input type="text" placeholder="N years ago" id="n1" />
+            <input type="text" placeholder="N years ago mother ratio" id="b1" />
+            <input type="text" placeholder="N years ago daughter ratio" id="b2" />
+            <div class="d-flex flex-row" id="agesque1ans1">
+                <p>1)find the mother’s age n2
+                    years from now ?
+                    <button class="button" onclick="AgeQue1Ans1()">Show</button>
+                </p>
+                <div id="solutionagesque1ans1"></div>
+            </div>
+            <div class="d-flex flex-row" id="agesque1ans2">
+                <p>2)find the daughter’s age n2
+                    years from now ?
+                    <button class="button" onclick="AgeQue1Ans2()">Show</button>
+                </p>
+                <div id="solutionagesque1ans2"></div>
+            </div>
+            <div class="d-flex flex-row" id="agesque1ans3">
+                <p>3)find the mother present age ?
+                    <button class="button" onclick="AgeQue1Ans3()">Show</button>
+                </p>
+                <div id="solutionagesque1ans3"></div>
+            </div>
+            <div class="d-flex flex-row" id="agesque1ans4">
+                <p>4)find the daughter present age ?
+                    <button class="button" onclick="AgeQue1Ans4()">Show</button>
+                </p>
+                <div id="solutionagesque1ans4"></div>
+            </div>
+            <div class="d-flex flex-row" id="agesque1ans5">
+                <p>5)find the sum at present ages ?
+                    <button class="button" onclick="AgeQue1Ans5()">Show</button>
+                </p>
+                <div id="solutionagesque1ans5"></div>
+            </div>
+            <div class="d-flex flex-row" id="agesque1ans6">
+                <p>6)find the difference of ages ?
+                    <button class="button" onclick="AgeQue1Ans6()">Show</button>
+                </p>
+                <div id="solutionagesque1ans6"></div>
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-end">
+            <button class="btn-secondary" onclick="display('sectionagestopic')">back</button>
+        </div>
+    </div>
+    <div id="sectionageques2">
+        <div class="m-3 pl-3">
+            <input type="text" id="AGESQUE2ANSA1" placeholder="Ratio of A" />
+            <input type="text" id="AGESQUE2ANSA2" placeholder="Ratio of B" />
+            <input type="text" id="AGESQUE2ANSASUM" placeholder="Sum of ages" />
+            <input type="text" id="AGESQUE2ANSN1" placeholder="Ages after n years ago" />
+            <div class="d-flex flex-row" id="agesque2ans1">
+                <p>1)What will be the ratio of their ages after n years ?
+                    <button class="button" onclick="AgeQue2Ans1()">Show</button>
+                </p>
+                <div id="solutionagesque2ans1"></div>
+            </div>
+            <div class="d-flex flex-row" id="agesque2ans2">
+                <p>2)What will be the ratio of their ages ago n years ?
+                    <button class="button" onclick="AgeQue2Ans2()">Show</button>
+                </p>
+                <div id="solutionagesque2ans2"></div>
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-end">
+            <button class="btn-secondary" onclick="display('sectionagestopic')">back</button>
+        </div>
+    </div>
+    <div id="sectionageques3">
+        <div class="m-3 pl-3">
+            <input type="text" id="AGESQUE3ANSN" placeholder="married n years ago" />
+            <input type="text" id="AGESQUE3ANSNUMA2" placeholder="No of times num today age" />
+            <input type="text" id="AGESQUE3ANSDENOA2" placeholder="No of times deno today age" />
+            <input type="text" id="AGESQUE3ANSDNUMA1" placeholder="Daughter no of times num age" />
+            <input type="text" id="AGESQUE3ANSDDENOA2" placeholder="Daughter no of times deno age" />
+            <input type="text" id="AGESQUE3ANSN1" placeholder="Daughter age n years ago" />
+            <div class="d-flex flex-row" id="agesque3ans1">
+                <p>1)What was her daughter’s age 3 years ago ?
+                    <button class="button" onclick="AgeQue3Ans1()">Show</button>
+                </p>
+                <div id="solutionagesque3ans1"></div>
+            </div>
+            <div class="d-flex flex-row" id="agesque3ans2">
+                <p>2)What was her daughter’s present age ?
+                    <button class="button" onclick="AgeQue3Ans2()">Show</button>
+                </p>
+                <div id="solutionagesque3ans2"></div>
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-end">
+            <button class="btn-secondary" onclick="display('sectionagestopic')">back</button>
+        </div>
+    </div>
+    <div id="sectionageques4">
+        <div class="m-3 pl-3">
+            <input type="text" id="AGESQUE4ANSA1" placeholder="Sanyal age n times is son" />
+            <input type="text" id="AGESQUE4ANSN1" placeholder="N years hence" />
+            <input type="text" id="AGESQUE4ANSB1" placeholder="Ratio of sanyal" />
+            <input type="text" id="AGESQUE4ANSB2" placeholder="Ratio of son" />
+            <div class="d-flex flex-row" id="agesque4ans1">
+                <p>1)What is the present age of Mr. Sanyal ?
+                    <button class="button" onclick="AgeQue4Ans1()">Show</button>
+                </p>
+                <div id="solutionagesque4ans1"></div>
+            </div>
+            <div class="d-flex flex-row" id="agesque4ans2">
+                <p>2)What is the present age of son ?
+                    <button class="button" onclick="AgeQue4Ans2()">Show</button>
+                </p>
+                <div id="solutionagesque4ans2"></div>
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-end">
+            <button class="btn-secondary" onclick="display('sectionagestopic')">back</button>
+        </div>
+    </div>
+    <div id="sectionageques5">
+        <div class="m-3 pl-3">
+            <input type="text" id="AGESQUE5ANSAVG" placeholder="Avg ages of man & daughter" />
+            <input type="text" id="AGESQUE5ANSN" placeholder="N years from now" />
+            <input type="text" id="AGESQUE5ANSB1" placeholder="Ratio of man" />
+            <input type="text" id="AGESQUE5ANSB2" placeholder="Ratio of daughter" />
+            <div class="d-flex flex-row" id="agesque5ans1">
+                <p>1)What is man present age ?
+                    <button class="button" onclick="AgeQue5Ans1()">Show</button>
+                </p>
+                <div id="solutionagesque5ans1"></div>
+            </div>
+            <div class="d-flex flex-row" id="agesque5ans2">
+                <p>2)What is daughter present age ?
+                    <button class="button" onclick="AgeQue5Ans2()">Show</button>
+                </p>
+                <div id="solutionagesque5ans2"></div>
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-end">
+            <button class="btn-secondary" onclick="display('sectionagestopic')">back</button>
+        </div>
+    </div>
+    <div id="sectionageques6">
+        <div class="m-3 pl-3">
+            <input type="text" id="AGESQUE6ANSRAM1" placeholder="Ram age ratio " />
+            <input type="text" id="AGESQUE6ANSMOHAN2" placeholder="Mohan age ratio" />
+            <input type="text" id="AGESQUE6ANSRAM2" placeholder="Ram age ratio" />
+            <input type="text" id="AGESQUE6ANSANIL2" placeholder="Anil age ratio" />
+            <input type="text" id="AGESQUE6ANSSUM" placeholder="sum of the three ages" />
+            <div class="d-flex flex-row" id="agesque6ans1">
+                <p>1)what is Mohan age ?
+                    <button class="button" onclick="AgeQue6Ans1()">Show</button>
+                </p>
+                <div id="solutionagesque6ans1"></div>
+            </div>
+            <div class="d-flex flex-row" id="agesque6ans2">
+                <p>2)what is Ram age ?
+                    <button class="button" onclick="AgeQue6Ans2()">Show</button>
+                </p>
+                <div id="solutionagesque6ans2"></div>
+            </div>
+            <div class="d-flex flex-row" id="agesque6ans3">
+                <p>3)what is Anil age ?
+                    <button class="button" onclick="AgeQue6Ans3()">Show</button>
+                </p>
+                <div id="solutionagesque6ans3"></div>
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-end">
+            <button class="btn-secondary" onclick="display('sectionagestopic')">back</button>
+        </div>
+    </div>
+    <div id="sectionageques7">
+        <div class="m-3 pl-3">
+            <input type="text" id="AGESQUE7ANSDIFF" placeholder="difference between ages" />
+            <input type="text" id="AGESQUE7ANSN" placeholder="n years ago" />
+            <input type="text" id="AGESQUE7ANSB1" placeholder="Ratio of ages arun" />
+            <input type="text" id="AGESQUE7ANSB2" placeholder="Ratio of ages Deepak" />
+            <div class="d-flex flex-row" id="agesque7ans1">
+                <p>1)What is Deepak’s present age ?
+                    <button class="button" onclick="AgeQue7Ans1()">Show</button>
+                </p>
+                <div id="solutionagesque7ans1"></div>
+            </div>
+            <div class="d-flex flex-row" id="agesque7ans2">
+                <p>2)What is Arun present age ?
+                    <button class="button" onclick="AgeQue7Ans2()">Show</button>
+                </p>
+                <div id="solutionagesque7ans2"></div>
+            </div>
+            <div class="d-flex flex-row justify-content-end">
+                <button class="btn-secondary" onclick="display('sectionagestopic')">back</button>
+            </div>
+        </div>
+    </div>
+    <div id="sectionageques8">
+        <div class="m-3 pl-3">
+            <input type="text" id="AGESQUE8ANSSUM" placeholder="sum of duaghter and mother " />
+            <input type="text" id="AGESQUE8ANSN" placeholder="after n years" />
+            <input type="text" id="AGESQUE8ANSMOTHER" placeholder="mother age will n times daughter" />
+            <input type="text" id="AGESQUE8ANSDUAGHTER" placeholder="Duaghter age" />
+            <div class="d-flex flex-row" id="agesque8ans1">
+                <p>1)What is the present their ages are ?
+                    <button class="button" onclick="AgeQue8Ans1()">Show</button>
+                </p>
+                <div id="solutionagesque8ans1"></div>
+            </div>
+            <div class="d-flex flex-row" id="agesque8ans2">
+                <p>2)What is the present age of mother ?
+                    <button class="button" onclick="AgeQue8Ans2()">Show</button>
+                </p>
+                <div id="solutionagesque8ans2"></div>
+            </div>
+            <div class="d-flex flex-row" id="agesque8ans3">
+                <p>3)What is the present age of daughter ?
+                    <button class="button" onclick="AgeQue8Ans3()">Show</button>
+                </p>
+                <div id="solutionagesque8ans3"></div>
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-end">
+            <button class="btn-secondary" onclick="display('sectionagestopic')">back</button>
+        </div>
+    </div>
+    <div id="sectionageques9">
+        <div class="m-3 pl-3">
+            <p>1)what is the difference between the ages of Subhash and Prasad ? <button class="button" onclick="display('sectionagesquestion9')">Ans</button></p>
+            <p>2)what is the difference between the ages of Subhash and Amar?</p>
+        </div>
+        <div class="d-flex flex-row justify-content-end">
+            <button class="btn-secondary" onclick="display('sectionagestopic')">back</button>
+        </div>
+    </div>
+    <div id="sectionageques10">
+        <div class="m-3 pl-3">
+            <p>1)What is the mother age is ? <button class="button" onclick="display('sectionagesquestion10')">Ans</button></p>
+            <p>2)What is the son age is ?</p>
+            <p>3)What is the daughter age is ? </p>
+            <p>4)What is the Father age is ?</p>
+        </div>
+        <div class="d-flex flex-row justify-content-end">
+            <button class="btn-secondary" onclick="display('sectionagestopic')">back</button>
+        </div>
+    </div>
+    <div id="sectionageques11">
+        <div class="m-3 pl-3">
+            <p>1)The present age of the eldest person ? <button class="button" onclick="display('sectionagesquestion11')">Ans</button></p>
+            <p>2)The present age of the youngest person ?</p>
+        </div>
+        <div class="d-flex flex-row justify-content-end">
+            <button class="btn-secondary" onclick="display('sectionagestopic')">back</button>
+        </div>
+    </div>
+    <div id="sectionageques12">
+        <div class="m-3 pl-3">
+            <p>1)present age person 1 ? <button class="button" onclick="display('sectionagesquestion12')">Ans</button></p>
+            <p>2)present age person 2 ?</p>
+            <p>3)present age person 3 ?</p>
+        </div>
+        <div class="d-flex flex-row justify-content-end">
+            <button class="btn-secondary" onclick="display('sectionagestopic')">back</button>
+        </div>
+    </div>
+    <div id="sectionageques13">
+        <div class="m-3 pl-3">
+            <p>1)find the man age ? <button class="button" onclick="display('sectionagesquestion13')">Ans</button></p>
+            <p>2)find the son age ?</p>
+        </div>
+        <div class="d-flex flex-row justify-content-end">
+            <button class="btn-secondary" onclick="display('sectionagestopic')">back</button>
+        </div>
+    </div>
+    <div id="sectionageques14">
+        <div class="m-3 pl-3">
+            <p>1)The ratio of ages after n years ago will be ? <button class="button" onclick="display('sectionagesquestion14')">Ans</button></p>
+        </div>
+        <div class="d-flex flex-row justify-content-end">
+            <button class="btn-secondary" onclick="display('sectionagestopic')">back</button>
+        </div>
+    </div>
+    <div id="sectionageques15">
+        <div class="m-3 pl-3">
+            <p>1)How many years ago was the ratio of theit ages ? <button class="button" onclick="display('sectionagesquestion15')">Ans</button></p>
+        </div>
+        <div class="d-flex flex-row justify-content-end">
+            <button class="btn-secondary" onclick="display('sectionagestopic')">back</button>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+
+</html>
