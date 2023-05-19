@@ -564,7 +564,200 @@
             <button class="btn-secondary" onclick="display('sectionagestopic')">back</button>
         </div>
     </div>
+ <div id="sectionavgeragetopic">
+        <h1 class="heading_ages">Select type method of Question</h1>
+        <div class="mt-3">
+            <p class="m-5">
+                1) The body weight of seven students of a class is
+                recorded as 54 kg, 78 kg, 43 kg, 82 kg, 67 kg,
+                42 kg and 75 kg. What is the average body weight
+                of all the seven students ? <button class="button" onclick="display('sectionaverageques1')" id="Averagesquestion1">find</button>
+            </p>
+            <p class="m-5">
+                2)The arithmetic mean of 15 numbers is 41.4. Then
+                the sum of these numbers is ? <button class="button" onclick="display('sectionaverageques2')" id="Averagesquestion2">find</button>
+            </p>
+            <p class="m-5">3). Among five people with monthly income (in `) 15000,
+                26000, 16000, 19000 and 50000, how many will have
+                income less than the mean income of five people ? <button class="button" onclick="display('sectionaverageques3')">find</button></p>
+            <p class="m-5">4)Kunal bought 65 books for ` 1050 from one shop
+                and 50 books for ` 1020 from another. What is the
+                average price he paid per book ? <button class="button" onclick="display('sectionaverageques4')">find</button></p>
+            <p class="m-5">5)There are five boxes in a cargo hold. The weight
+                of the first box is 200 kg and the weight of
+                the second box is 20% more than the weight
+                of the third box, whose weight is 25% more
+                than the first box’s weight. The fourth box at
+                350 kg is 30% lighter than the fifth box. The difference
+                in the average weight of the four heaviest boxes and
+                the four lightest boxes is ? <button class="button" onclick="display('sectionaverageques5')">find</button></p>
+            <p class="m-5">6)The mean of the first ten even natural numbers is ? <button class="button" onclick="display('sectionaverageques6')">find</button></p>
+            <p class="m-5"> 7)A student was asked to find the arithmetic mean
+                of the numbers 3, 11, 7, 9, 15, 13, 8, 19, 17, 21, 14
+                and x. He found the mean to be 12. What should
+                be the number in place of x ? <button class="button" onclick="display('sectionaverageques7')">find</button></p>
+            <p class="m-5">8)Total of Arun’s marks in Sanskrit and Mathematics
+                together are 80 more than his marks in Science. His
+                average marks in the three subjects are 100. What
+                are his marks in Science ? <button class="button" onclick="display('sectionaverageques8')">find</button></p>
+            <p class="m-5">9)Company C sells a line of 25 products with an
+                average retail price of ` 1200. If none of these products sells for less than ` 420 and exactly 10 of the
+                products sell for less than ` 1000, then what is the
+                greatest possible selling price of the most expensive
+                product ? <button class="button" onclick="display('sectionaverageques9')">find</button></p>
+            <p class="m-5">10)The mean of 5 observations is 60, the mean of 10
+                observations is 30 and the mean of 15 observations
+                is 20. The mean of all the 30 observations is
+                ? <button class="button" onclick="display('sectionaverageques10')">find</button></p>
+            <p class="m-5">11)The average weight of 16 boys in a class is 50.25
+                kgs and that of the remaining 8 boys is 45.15 kgs.
+                Find the average weight of all the boys in the class ? <button class="button" onclick="display('sectionaverageques11')">find</button></p>
+            <p class="m-5">12)Of the three numbers, the first is twice the second
+                and the second is twice the third. The average of the
+                reciprocal of the numbers is 7 / 72
+                The numbers are ? <button class="button" onclick="display('sectionaverageques12')">find</button></p>
+            <p class="m-5">13)The average height of 35 girls in a class was calculated
+                as 160 cm. It was later found that the height of one
+                of the girls in the class was wrongly written as
+                144 cm, whereas her actual height was 104 cm. What
+                is the actual average height of the girls in the class?
+                (rounded off to 2 digits after decimal) ? <button class="button" onclick="display('sectionaverageques13')">find</button></p>
+            <p class="m-5">14)The average temperature for the first four days of
+                a week is 40.2º C and that of the last four days is
+                41.3° C. If the average temperature for the whole
+                week is 40.6° C, then the temperature on the fourth
+                day is ? <button class="button" onclick="display('sectionaverageques14')">find</button></p>
+            <p class="m-5">15)The average weight of a class of 24 students is 35
+                kg. If the weight of the teacher be included, the
+                average rises by 400 g. The weight of the teacher is ? <button class="button" onclick="display('sectionaverageques15')">find</button></p>
+            <p class="m-5">16)Average score of a class of 60 students, in an exam,
+                was 43. Average score of the students who had
+                passed is 52 and the average score of students who
+                had failed is 16. How many failed the exam ? <button class="button" onclick="display('sectionaverageques16')">find</button></p>
 
+        </div>
+        <div class="d-flex flex-row justify-content-end">
+            <button class="btn-secondary" onclick="display('sectiontopichomepage')">back</button>
+        </div>
+    </div>
+    <div id="sectionaverageques1">
+        <div class="m-3 pl-3">
+            <input type="text" id="AVGESQUE1ANSSTUDENTS" placeholder="No of students" />
+            <input type="text" id="AVGESQUE1ANSVALUE" placeholder="no of input values with sperator by , " size="27" />
+            <div class="d-flex flex-row" id="avgque1ans1">
+                <p>1)What is the age of the youngest child ?
+                    <button class="button" onclick="AvgQue1Ans1()" id="AVGQUE1ANS1">Show</button>
+                </p>
+                <div id="solutionavgque1ans1"></div>
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-end">
+            <button class="btn-secondary" onclick="display('sectionavgeragetopic')">back</button>
+        </div>
+    </div>
+    <div id="sectionaverageques2">
+        <div class="m-3 pl-3">
+            <input type="text" id="AVGESQUE2ANSNUMBERS" placeholder="mean of n numbers" />
+            <input type="text" id="AVGESQUE2ANSMEAN" placeholder="Arithmetic mean " />
+            <div class="d-flex flex-row" id="avgque2ans1">
+                <p>1)sum of these numbers is ?
+                    <button class="button" onclick="AvgQue2Ans1()" id="AVGQUE2ANS1">Show</button>
+                </p>
+                <div id="solutionavgque2ans1"></div>
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-end">
+            <button class="btn-secondary" onclick="display('sectionavgeragetopic')">back</button>
+        </div>
+    </div>
+    <div id="sectionaverageques3">
+        <div class="m-3 pl-3">
+            <input type="text" id="AVGESQUE1ANSPEOPLE" placeholder="no of people" />
+            <input type="text" id="AVGESQUE1ANSINCOME" placeholder="monthly income of people with sperator ," size="27" />
+            <div class="d-flex flex-row" id="avgque3ans1">
+                <p>1)How many will have income less than the mean income of five people ?
+                    <button class="button" onclick="AvgQue3Ans1()" id="AVGQUE3ANS1">Show</button>
+                </p>
+                <div id="solutionavgque3ans1"></div>
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-end">
+            <button class="btn-secondary" onclick="display('sectionavgeragetopic')">back</button>
+        </div>
+    </div>
+    <div id="sectionaverageques4">
+        <div class="m-3 pl-3">
+            <input type="text" id="AVGESQUE2ANSSHOP1" placeholder="no of books and no of cost from 1 shop with , sperator" size="50" /><br />
+            <input type="text" id="AVGESQUE2ANSSHOP2" placeholder="no of books and no of cost from 2 shop with , sperator" size="50" />
+            <div class="d-flex flex-row" id="avgque4ans1">
+                <p>1)What is the average price he paid per book ?
+                    <button class="button" onclick="AvgQue4Ans1()" id="AVGQUE4ANS1">Show</button>
+                </p>
+                <div id="solutionavgque4ans1"></div>
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-end">
+            <button class="btn-secondary" onclick="display('sectionavgeragetopic')">back</button>
+        </div>
+    </div>
+    <div id="sectionaverageques5">
+        <div class="m-3 pl-3">
+            <input type="text" id="AVGESQUE5ANSBOXES" placeholder="no of boxes" />
+            <input type="text" id="AVGESQUE5ANSFRIST" placeholder="Frist box kg's" />
+            <input type="text" id="AVGESQUE5ANSSECOND" placeholder="second box n% thrid box" />
+            <input type="text" id="AVGESQUE5ANSTHRID" placeholder="Thrid box n% more than frist box" size="30" />
+            <input type="text" id="AVGESQUE5ANSFOURTH" placeholder="fourth box kg" />
+            <input type="text" id="AVGESQUE5ANSFIFTH" placeholder="Fifth box n% lighter than fourth box" size="30" />
+            <div class="d-flex flex-row" id="avgque5ans1">
+                <p>1)The difference in the average weight of the four heaviest boxes and the four lightest boxes is ?
+                    <button class="button" onclick="AvgQue5Ans1()" id="AVGQUE5ANS1">Show</button>
+                </p>
+                <div id="solutionavgque5ans1"></div>
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-end">
+            <button class="btn-secondary" onclick="display('sectionavgeragetopic')">back</button>
+        </div>
+    </div>
+    <div id="sectionaverageques6">
+        <div class="m-3 pl-3">
+            <input type="text" id="AVGESQUE6ANSEVENODD" placeholder="Enter even or odd" />
+            <input type="text" id="AVGESQUE6ANSNATURAL" placeholder="Enter n natural numbers" />
+            <div class="d-flex flex-row" id="avgque6ans1">
+                <p>1)The mean of the first ten even natural numbers is ?
+                    <button class="button" onclick="AvgQue6Ans1()" id="AVGQUE6ANS1">Show</button>
+                </p>
+                <div id="solutionavgque6ans1"></div>
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-end">
+            <button class="btn-secondary" onclick="display('sectionavgeragetopic')">back</button>
+        </div>
+    </div>
+    <div id="sectionaverageques7">
+        <div class="m-3 pl-3">
+            <input type="text" id="AVGESQUE7ANSMEAN" placeholder="total mean or average" />
+            <input type="text" id="AVGESQUE7ANSVALUE" placeholder="no of input values with sperator by , " size="27" />
+            <div class="d-flex flex-row" id="avgque7ans1">
+                <p>1)What should be the number in place of x ?
+                    <button class="button" onclick="AvgQue7Ans1()" id="AVGQUE7ANS1">Show</button>
+                </p>
+                <div id="solutionavgque7ans1"></div>
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-end">
+            <button class="btn-secondary" onclick="display('sectionavgeragetopic')">back</button>
+        </div>
+    </div>
+    <div id="sectionaverageques8"></div>
+    <div id="sectionaverageques9"></div>
+    <div id="sectionaverageques10"></div>
+    <div id="sectionaverageques11"></div>
+    <div id="sectionaverageques12"></div>
+    <div id="sectionaverageques13"></div>
+    <div id="sectionaverageques14"></div>
+    <div id="sectionaverageques15"></div>
+    <div id="sectionaverageques16"></div>
     <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
 </body>
 
