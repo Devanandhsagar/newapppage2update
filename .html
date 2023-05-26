@@ -1051,6 +1051,194 @@
             <button class="btn-secondary" onclick="display('sectionracestopic')">back</button>
         </div>
     </div>
+     <div id="sectionstockstopic">
+        <h1 class="heading_ages">Select type method of Question</h1>
+        <div class="mt-3">
+            <p class="m-5">
+                1) The cost price of a ` 100 stock at 4 discount, when
+                brokerage is 1/4 % is ? <button class="button" onclick="display('sectionstocksques1')">find</button>
+            </p>
+            <p class="m-5">
+                2)The cash realised on selling a 14% stock at ` 106.25,
+                brokerage being 1/4 % , is ? <button class="button" onclick="display('sectionstocksques2')">find</button>
+            </p>
+            <p class="m-5">3)How many shares of market value ` 25 each can be
+                purchased for ` 12750, brokerage being 2% ? <button class="button" onclick="display('sectionstocksques3')">find</button></p>
+            <p class="m-5">4)A man invests in a 16% stock at 128. The interest
+                obtained by him is ? <button class="button" onclick="display('sectionstocksques4')">find</button></p>
+            <p class="m-5">
+                5)A man invested ` 4455 in ` 10 shares quoted at 8.25. If the rate of dividend be 12%, his annual
+                income is ? <button class="button" onclick="display('sectionstocksques5')">find</button>
+            </p>
+            <p class="m-5">
+                6). A 9% stock yields 8%. The market value of the stock is ? <button class="button" onclick="display('sectionstocksques6')">find</button>
+            </p>
+            <p class="m-5">7)A man invested 1552 in a stock at 97 to obtain an income of 128. The dividend from the stock is ? <button class="button" onclick="display('sectionstocksques7')">find</button></p>
+            <p class="m-5">8)A man bought 20 shares of 50 at 5 discount, the rate of dividend being 13 1/2 %.The rate of interest obtained is ? <button class="button" onclick="display('sectionstocksques8')">find</button></p>
+            <p class="m-5">9)A man invests some money partly in 9% stock at 96 and partly in 12% stock at 120. To obtain equal dividends from both, he must invest the money in
+                the ratio ? <button class="button" onclick="display('sectionstocksques9')">find</button></p>
+            <p class="m-5">10). A invested some money in 10% stock at 96. If B wants to invest in an equally good 12% stock, he
+                must purchase a stock worth of ? <button class="button" onclick="display('sectionstocksques10')">find</button></p>
+        </div>
+        <div class="d-flex flex-row justify-content-end">
+            <button class="btn-secondary" onclick="display('sectiontopichomepage')">back</button>
+        </div>
+    </div>
+    <div id="sectionstocksques1">
+        <div class="m-3 pl-3">
+            <input type="text" id="STOCKSQUE1ANSSTOCK" placeholder="Enter the stock" />
+            <input type="text" id="STOCKSQUE1ANSDISCOUNT" placeholder="Discount" />
+            <input type="text" id="STOCKSQUE1ANSBROKERAGE" placeholder="brokerage % give with / " size="30" />
+            <div class="d-flex flex-row" id="stocksque1ans1">
+                <p>1) The cost price is ?
+                    <button class="button" onclick="StocksQue1Ans1()" id="STOCKSQUE1ANS1">Show</button>
+                </p>
+                <div id="solutionstocksque1ans1"></div>
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-end">
+            <button class="btn-secondary" onclick="display('sectionstockstopic')">back</button>
+        </div>
+    </div>
+    <div id="sectionstocksques2">
+        <div class="m-3 pl-3">
+            <input type="text" id="STOCKSQUE2ANSSTOCK" placeholder="Enter the stock" />
+            <input type="text" id="STOCKSQUE2ANSBROKERAGE" placeholder="brokerage % give with / " size="30" />
+            <div class="d-flex flex-row" id="stocksque2ans1">
+                <p>1) The cost price is ?
+                    <button class="button" onclick="StocksQue2Ans1()" id="STOCKSQUE2ANS1">Show</button>
+                </p>
+                <div id="solutionstocksque2ans1"></div>
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-end">
+            <button class="btn-secondary" onclick="display('sectionstockstopic')">back</button>
+        </div>
+    </div>
+    <div id="sectionstocksques3">
+        <div class="m-3 pl-3">
+            <input type="text" id="STOCKSQUE3ANSMARKET" placeholder="Market value" />
+            <input type="text" id="STOCKSQUE3ANSPURCHASED" placeholder="purchased is " />
+            <input type="text" id="STOCKSQUE3ANSBROKERAGE" placeholder="brokerage % " size="30" />
+            <div class="d-flex flex-row" id="stocksque3ans1">
+                <p>1) The cost price is ?
+                    <button class="button" onclick="StocksQue3Ans1()" id="STOCKSQUE3ANS1">Show</button>
+                </p>
+                <div id="solutionstocksque3ans1"></div>
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-end">
+            <button class="btn-secondary" onclick="display('sectionstockstopic')">back</button>
+        </div>
+    </div>
+    <div id="sectionstocksques4">
+        <div class="m-3 pl-3">
+            <input type="text" id="STOCKSQUE4ANSSTOCK" placeholder="Enter the stock and money with space sperator" />
+            <div class="d-flex flex-row" id="stocksque4ans1">
+                <p>1)The interest obtained by him is ?
+                    <button class="button" onclick="StocksQue4Ans1()" id="STOCKSQUE4ANS1">Show</button>
+                </p>
+                <div id="solutionstocksque4ans1"></div>
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-end">
+            <button class="btn-secondary" onclick="display('sectionstockstopic')">back</button>
+        </div>
+    </div>
+    <div id="sectionstocksques5">
+        <div class="m-3 pl-3">
+            <input type="text" id="STOCKSQUE5ANSINVESTED" placeholder="Man invested" /><br />
+            <input type="text" id="STOCKSQUE5ANSSHARES" placeholder="no of shares and quoted at n give values with space sperator" size="60" /><br />
+            <input type="text" id="STOCKSQUE5ANSDIVIDEND" placeholder="dividend % id" />
+            <div class="d-flex flex-row" id="stocksque5ans1">
+                <p>1) His annual income is ?
+                    <button class="button" onclick="StocksQue5Ans1()" id="STOCKSQUE5ANS1">Show</button>
+                </p>
+                <div id="solutionstocksque5ans1"></div>
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-end">
+            <button class="btn-secondary" onclick="display('sectionstockstopic')">back</button>
+        </div>
+    </div>
+    <div id="sectionstocksques6">
+        <div class="m-3 pl-3">
+            <input type="text" id="STOCKSQUE1ANSSTOCK" placeholder="Enter the stock %" />
+            <input type="text" id="STOCKSQUE1ANSDISCOUNT" placeholder="Enter the yeids % " />
+            <div class="d-flex flex-row" id="stocksque6ans1">
+                <p>1) The market value of the stock is ?
+                    <button class="button" onclick="StocksQue6Ans1()" id="STOCKSQUE6ANS1">Show</button>
+                </p>
+                <div id="solutionstocksque6ans1"></div>
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-end">
+            <button class="btn-secondary" onclick="display('sectionstockstopic')">back</button>
+        </div>
+    </div>
+    <div id="sectionstocksques7">
+        <div class="m-3 pl-3">
+            <input type="text" id="STOCKSQUE7ANSINVESTED" placeholder="Man invested stock" />
+            <input type="text" id="STOCKSQUE7ANSMONEY" placeholder="Money at" />
+            <input type="text" id="STOCKSQUE7ANSINCOME" placeholder="Income money" />
+            <div class="d-flex flex-row" id="stocksque7ans1">
+                <p>1) The dividend from the stock is ?
+                    <button class="button" onclick="StocksQue7Ans1()" id="STOCKSQUE7ANS1">Show</button>
+                </p>
+                <div id="solutionstocksque7ans1"></div>
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-end">
+            <button class="btn-secondary" onclick="display('sectionstockstopic')">back</button>
+        </div>
+    </div>
+    <div id="sectionstocksques8">
+        <div class="m-3 pl-3">
+            <input type="text" id="STOCKSQUE8ANSSTOCK" placeholder="man shares and money with space sperator" size="50" /><br />
+            <input type="text" id="STOCKSQUE8ANSDISCOUNT" placeholder="Discount" /><br />
+            <input type="text" id="STOCKSQUE8ANSBROKERAGE" placeholder="Rate dividend % give with / " size="30" />
+            <div class="d-flex flex-row" id="stocksque8ans1">
+                <p>1) The rate of interest obtained is ?
+                    <button class="button" onclick="StocksQue8Ans1()" id="STOCKSQUE8ANS1">Show</button>
+                </p>
+                <div id="solutionstocksque8ans1"></div>
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-end">
+            <button class="btn-secondary" onclick="display('sectionstockstopic')">back</button>
+        </div>
+    </div>
+    <div id="sectionstocksques9">
+        <div class="m-3 pl-3">
+            <input type="text" id="STOCKSQUE9ANSSTOCK1" placeholder="n % stock and money give values with space sperator" size="60" /><br />
+            <input type="text" id="STOCKSQUE9ANSSTOCKS2" placeholder="n % stock and money give values with space sperator" size="60" />
+            <div class="d-flex flex-row" id="stocksque9ans1">
+                <p>1) To obtain equal dividends from both, he must invest the money in the ratio ?
+                    <button class="button" onclick="StocksQue9Ans1()" id="STOCKSQUE9ANS1">Show</button>
+                </p>
+                <div id="solutionstocksque9ans1"></div>
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-end">
+            <button class="btn-secondary" onclick="display('sectionstockstopic')">back</button>
+        </div>
+    </div>
+    <div id="sectionstocksques10">
+        <div class="m-3 pl-3">
+            <input type="text" id="STOCKSQUE10ANSASTOCK" placeholder="A % in stock" />
+            <input type="text" id="STOCKSQUE10ANSMONEY" placeholder="invested money" />
+            <input type="text" id="STOCKSQUE10ANSBSTOCK" placeholder="B % in stock" />
+            <div class="d-flex flex-row" id="stocksque10ans1">
+                <p>1) He must purchase a stock worth of ?
+                    <button class="button" onclick="StocksQue10Ans1()" id="STOCKSQUE10ANS1">Show</button>
+                </p>
+                <div id="solutionstocksque10ans1"></div>
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-end">
+            <button class="btn-secondary" onclick="display('sectionstockstopic')">back</button>
+        </div>
+    </div>
     <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
 </body>
 
