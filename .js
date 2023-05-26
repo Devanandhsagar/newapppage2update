@@ -2295,3 +2295,519 @@ function RacesQue2Ans1() {
         a.appendChild(again)
     }
 }
+let racesque3ans1 = true;
+function RacesQue3Ans1() {
+    let a = document.getElementById("racesque3ans1");
+    let input1 = document.getElementById("RACESQUE3ANSAB");
+    let input2 = document.getElementById("RACESQUE3ANSAC");
+    let button = document.getElementById("RACESQUE3ANS1");
+    if (racesque3ans1 === true) {
+        let solutionpage = document.getElementById("solutionracesque3ans1");
+        let textarea1 = document.createElement("p");
+        let textarea2 = document.createElement("p");
+        let textarea3 = document.createElement("p");
+        let textarea4 = document.createElement("p");
+        button.textContent = "Hide"
+        textarea1.textContent = "A : B : C = " + 1000 + " : (" + 1000 + " - " + input1.value + ") : (" + 1000 + " - " + input2.value + ")";
+        textarea2.textContent = "A : B : C = " + 1000 + " : " + (parseInt(1000) - parseInt(input1.value)) - (parseInt(1000) - parseInt(input2.value));
+        textarea3.textContent = "In a " + (parseInt(1000) - parseInt(input1.value)) + "m B can give c = " + (parseInt(1000) - parseInt(input1.value)) + " - " + (parseInt(1000) - parseInt(input2.value)) + " = " + Math.abs((parseInt(1000) - parseInt(input1.value)) - (parseInt(1000) - parseInt(input2.value)));
+        textarea4.textContent = " In a 1000m race  B and C start = ((" + Math.abs((parseInt(1000) - parseInt(input1.value)) - (parseInt(1000) - parseInt(input2.value))) + "/" + (parseInt(1000) - parseInt(input1.value)) + ")*" + 1000 + ") = " + (((parseInt(1000) - parseInt(input1.value)) - (parseInt(1000) - parseInt(input2.value))) / (parseInt(1000) - parseInt(input1.value))) * parseInt(1000)
+        racesque3ans1 = false
+        solutionpage.appendChild(textarea1);
+        solutionpage.appendChild(textarea2);
+        solutionpage.appendChild(textarea3);
+        solutionpage.appendChild(textarea4);
+    } else {
+        let solutionpage = document.getElementById("solutionracesque3ans1");
+        button.textContent = "Show"
+        racesque3ans1 = true
+        a.removeChild(solutionpage)
+        let again = document.createElement("div");
+        again.id = "solutionracesque3ans1";
+        a.appendChild(again)
+    }
+}
+let racesque4ans1 = true;
+
+function RacesQue4Ans1() {
+    let a = document.getElementById("racesque4ans1");
+    let input1 = document.getElementById("RACESQUE4ANSLENGTH");
+    let input2 = document.getElementById("RACESQUE4ANSAB");
+    let input3 = document.getElementById("RACESQUE4ANSBC");
+    let button = document.getElementById("RACESQUE4ANS1");
+    if (racesque4ans1 === true) {
+        let solutionpage = document.getElementById("solutionracesque4ans1");
+        let textarea1 = document.createElement("p");
+        let textarea2 = document.createElement("p");
+        let textarea3 = document.createElement("p");
+        let textarea4 = document.createElement("p");
+        button.textContent = "Hide"
+        let str = input1.value.split(" ");
+        textarea1.textContent = "A : B = " + str[0] + " : (" + str[0] + " - " + input2.value + ") = " + str[0] + " : " + (parseInt(str[0]) - parseInt(input2.value));
+        textarea2.textContent = "B : C = " + str[1] + " : (" + str[1] + " - " + input3.value + ") = " + str[1] + " : " + (parseInt(str[1]) - parseInt(input3.value));
+        let ar_1 = 100;
+        let ar_2 = 90;
+        textarea3.textContent = "A : B : C = " + str[0] + " : " + (parseInt(str[0]) - parseInt(input2.value)) + " : " + (parseInt(9) * parseInt(ar_2));
+        textarea4.textContent = "In a 500 meters race A beats C = " + ((parseInt(str[0]) / parseInt(2)) + " - " + ((parseInt(9) * parseInt(ar_2)) / parseInt(2))) + " = " + (((parseInt(str[0]) / parseInt(2))) - ((parseInt(9) * parseInt(ar_2)) / parseInt(2))) + " m";
+        racesque4ans1 = false
+        solutionpage.appendChild(textarea1);
+        solutionpage.appendChild(textarea2);
+        solutionpage.appendChild(textarea3);
+        solutionpage.appendChild(textarea4);
+    } else {
+        let solutionpage = document.getElementById("solutionracesque4ans1");
+        button.textContent = "Show"
+        racesque4ans1 = true
+        a.removeChild(solutionpage)
+        let again = document.createElement("div");
+        again.id = "solutionracesque4ans1";
+        a.appendChild(again)
+    }
+}
+let racesque5ans1 = true;
+
+function RacesQue5Ans1() {
+    let a = document.getElementById("racesque5ans1");
+    let input1 = document.getElementById("RACESQUE5ANSAB");
+    let input2 = document.getElementById("RACESQUE5ANSBC");
+    let input3 = document.getElementById("RACESQUE5ANSAC");
+    let input4 = document.getElementById("RACESQUE5ANSN");
+    let button = document.getElementById("RACESQUE5ANS1");
+    if (racesque5ans1 === true) {
+        let solutionpage = document.getElementById("solutionracesque5ans1");
+        let textarea1 = document.createElement("p");
+        let textarea2 = document.createElement("p");
+        let textarea3 = document.createElement("p");
+        button.textContent = "Hide"
+        textarea1.textContent = "A beats C  " + input3.value + " = " + (parseInt(input1.value) + " + " + parseInt(input2.value)) + "  = " + (parseInt(input1.value) + parseInt(input2.value)) + " sec"
+        textarea2.textContent = input4.value + "m covered by C = (" + (parseInt(input1.value) + parseInt(input2.value)) + "/" + input3.value + ") * " + input4.value + " = " + (((parseInt(input1.value) + parseInt(input2.value)) / parseInt(input3.value)) * (parseInt(input4.value))) + " sec";
+        textarea3.textContent = "A covers " + input4.value + "m in =  " + ((((parseInt(input1.value) + parseInt(input2.value)) / parseInt(input3.value)) * (parseInt(input4.value))) - (parseInt(input1.value) + parseInt(input2.value))) + " sec";
+        racesque5ans1 = false
+        solutionpage.appendChild(textarea1);
+        solutionpage.appendChild(textarea2);
+        solutionpage.appendChild(textarea3);
+    } else {
+        let solutionpage = document.getElementById("solutionracesque5ans1");
+        button.textContent = "Show"
+        racesque5ans1 = true
+        a.removeChild(solutionpage)
+        let again = document.createElement("div");
+        again.id = "solutionracesque5ans1";
+        a.appendChild(again)
+    }
+}
+let racesque6ans1 = true;
+
+function RacesQue6Ans1() {
+    let a = document.getElementById("racesque6ans1");
+    let input1 = document.getElementById("RACESQUE6ANSLENGTH");
+    let input2 = document.getElementById("RACESQUE6ANSSECONDS");
+    let input3 = document.getElementById("RACESQUE6ANSSPEED");
+    let button = document.getElementById("RACESQUE6ANS1");
+    if (racesque6ans1 === true) {
+        let solutionpage = document.getElementById("solutionracesque6ans1");
+        let textarea1 = document.createElement("p");
+        let textarea2 = document.createElement("p");
+        let textarea3 = document.createElement("p");
+        let textarea4 = document.createElement("p");
+        button.textContent = "Hide"
+        textarea1.textContent = "A's speed = " + input3.value + " km/hr = " + input3.value + " *  5/18  = " + (parseInt(input3.value) * ((parseInt(5)) / parseInt(18))) + " m/sec";
+        textarea2.textContent = "A Time takes cover " + input1.value + " m = " + input1.value + " * " + (parseInt(input3.value) * ((parseInt(5)) / parseInt(18))) + " = " + parseInt(input1.value) * (parseInt(input3.value) * ((parseInt(5)) / parseInt(18))) + " sec";
+        textarea3.textContent = "A Time takes cover " + input1.value + " m = " + (parseInt(input1.value) * (parseInt(input3.value) * ((parseInt(5)) / parseInt(18)))) + " + " + input2.value + " = " + ((parseInt(input1.value) * (parseInt(input3.value) * ((parseInt(5)) / parseInt(18)))) + (parseInt(input2.value))) + " sec";
+        textarea4.textContent = "B speed = " + input1.value + "/" + ((parseInt(input1.value) * (parseInt(input3.value) * ((parseInt(5) / parseInt(18)))) + parseInt(input2.value))) + "m/sec = " + (parseInt(input1.value) / ((parseInt(input1.value) * (parseInt(input3.value) * ((parseInt(5)) / parseInt(18)))) + parseInt(input2.value))) * (parseInt(18) / parseInt(5));
+        racesque6ans1 = false
+        solutionpage.appendChild(textarea1);
+        solutionpage.appendChild(textarea2);
+        solutionpage.appendChild(textarea3);
+        solutionpage.appendChild(textarea4);
+    } else {
+        let solutionpage = document.getElementById("solutionracesque6ans1");
+        button.textContent = "Show"
+        racesque6ans1 = true
+        a.removeChild(solutionpage)
+        let again = document.createElement("div");
+        again.id = "solutionracesque6ans1";
+        a.appendChild(again)
+    }
+}
+let racesque7ans1 = true;
+
+function RacesQue7Ans1() {
+    let a = document.getElementById("racesque7ans1");
+    let input1 = document.getElementById("RACESQUE7ANSLENGTH");
+    let input2 = document.getElementById("RACESQUE7ANSBA");
+    let input3 = document.getElementById("RACESQUE7ANSBC");
+    let button = document.getElementById("RACESQUE7ANS1");
+    if (racesque7ans1 === true) {
+        let solutionpage = document.getElementById("solutionracesque7ans1");
+        let textarea1 = document.createElement("p");
+        let textarea2 = document.createElement("p");
+        let textarea3 = document.createElement("p");
+        let textarea4 = document.createElement("p");
+        button.textContent = "Hide"
+        textarea1.textContent = "B : A  = " + input1.value + " : " + input1.value + " - " + input2.value + " = " + input1.value + " : " + (parseInt(input1.value) - parseInt(input2.value));
+        textarea2.textContent = "C : B  = " + input1.value + " : " + input1.value + " - " + input3.value + " = " + input1.value + " : " + (parseInt(input1.value) - parseInt(input3.value));
+        textarea3.textContent = "C/A = (C/B)*(B/A) = (" + input1.value + "/" + (parseInt(input1.value) - parseInt(input3.value)) + ") * (" + input1.value + "/" + (parseInt(input1.value) - parseInt(input2.value)) + ") = " + parseInt(input1.value) + "/" + (parseInt(input1.value) / ((parseInt(input1.value) / (parseInt(input1.value) - parseInt(input3.value))) * (parseInt(input1.value) / (parseInt(input1.value) - parseInt(input2.value)))));
+        textarea4.textContent = "C can give to A start = " + input1.value + " - " + (parseInt(input1.value) / ((parseInt(input1.value) / (parseInt(input1.value) - parseInt(input3.value))) * (parseInt(input1.value) / (parseInt(input1.value) - parseInt(input2.value))))) + " = " + (parseInt(input1.value) - (parseInt(input1.value) / ((parseInt(input1.value) / (parseInt(input1.value) - parseInt(input3.value))) * (parseInt(input1.value) / (parseInt(input1.value) - parseInt(input2.value)))))) + " m";
+        racesque7ans1 = false
+        solutionpage.appendChild(textarea1);
+        solutionpage.appendChild(textarea2);
+        solutionpage.appendChild(textarea3);
+        solutionpage.appendChild(textarea4);
+    } else {
+        let solutionpage = document.getElementById("solutionracesque7ans1");
+        button.textContent = "Show"
+        racesque7ans1 = true
+        a.removeChild(solutionpage)
+        let again = document.createElement("div");
+        again.id = "solutionracesque7ans1";
+        a.appendChild(again)
+    }
+}
+let racesque8ans1 = true;
+
+function RacesQue8Ans1() {
+    let a = document.getElementById("racesque8ans1");
+    let input1 = document.getElementById("RACESQUE8ANSLENGTH");
+    let input2 = document.getElementById("RACESQUE8ANSRATIO");
+    let input3 = document.getElementById("RACESQUE8ANSA");
+    let button = document.getElementById("RACESQUE8ANS1");
+    if (racesque8ans1 === true) {
+        let solutionpage = document.getElementById("solutionracesque8ans1");
+        let textarea1 = document.createElement("p");
+        let textarea2 = document.createElement("p");
+        let textarea3 = document.createElement("p");
+        button.textContent = "Hide"
+        let r = input2.value.split(" ")
+        textarea1.textContent = " A as cover = " + input1.value + " - " + input3.value + " = " + (parseInt(input1.value) - parseInt(input3.value)) + " m";
+        textarea2.textContent = "While A covers " + (parseInt(input1.value) - parseInt(input3.value)) + " , B covers = (" + r[1] + "/" + r[0] + ")*(" + input1.value + ") = " + (parseFloat(parseInt(r[1]) / parseInt(r[0])) * (parseInt(input1.value) - parseInt(input3.value)));
+        textarea3.textContent = "A wins by = (" + input1.value + " - " + (parseFloat(parseInt(r[1]) / parseInt(r[0])) * parseInt(input1.value)) + ") = " + (parseInt(input1.value) - (parseFloat(parseInt(r[1]) / parseInt(r[0])) * (parseInt(input1.value) - parseInt(input3.value)))) + " m";
+        racesque8ans1 = false
+        solutionpage.appendChild(textarea1);
+        solutionpage.appendChild(textarea2);
+        solutionpage.appendChild(textarea3);
+    } else {
+        let solutionpage = document.getElementById("solutionracesque8ans1");
+        button.textContent = "Show"
+        racesque8ans1 = true
+        a.removeChild(solutionpage)
+        let again = document.createElement("div");
+        again.id = "solutionracesque8ans1";
+        a.appendChild(again)
+    }
+}
+let stocksque1ans1 = true;
+
+function StocksQue1Ans1() {
+    let a = document.getElementById("stocksque1ans1");
+    let input1 = document.getElementById("STOCKSQUE1ANSSTOCK");
+    let input2 = document.getElementById("STOCKSQUE1ANSDISCOUNT");
+    let input3 = document.getElementById("STOCKSQUE1ANSBROKERAGE");
+    let button = document.getElementById("STOCKSQUE1ANS1");
+    if (stocksque1ans1 === true) {
+        let solutionpage = document.getElementById("solutionstocksque1ans1");
+        let textarea1 = document.createElement("p");
+        let textarea2 = document.createElement("p");
+        let textarea3 = document.createElement("p");
+        button.textContent = "Hide"
+        let r = input3.value.split("/")
+        textarea1.textContent = " Cost price  = " + input1.value + " + " + r[0] + "/" + r[1] + " - " + input2.value;
+        textarea2.textContent = "Cost price =  " + (parseInt(input1.value) + " + " + (parseFloat(parseInt(r[1]) / parseInt(r[0]))) + " - " + input2.value);
+        textarea3.textContent = "Cost price = " + (parseInt(input1.value) + (parseFloat(parseInt(r[1]) / parseInt(r[0]))) - parseInt(input2.value));
+        stocksque1ans1 = false
+        solutionpage.appendChild(textarea1);
+        solutionpage.appendChild(textarea2);
+        solutionpage.appendChild(textarea3);
+    } else {
+        let solutionpage = document.getElementById("solutionstocksque1ans1");
+        button.textContent = "Show"
+        stocksque1ans1 = true
+        a.removeChild(solutionpage)
+        let again = document.createElement("div");
+        again.id = "solutionstocksque1ans1";
+        a.appendChild(again)
+    }
+}
+let stocksque2ans1 = true;
+
+function StocksQue2Ans1() {
+    let a = document.getElementById("stocksque2ans1");
+    let input1 = document.getElementById("STOCKSQUE2ANSSTOCK");
+    let input2 = document.getElementById("STOCKSQUE2ANSBROKERAGE");
+    let button = document.getElementById("STOCKSQUE2ANS1");
+    if (stocksque2ans1 === true) {
+        let solutionpage = document.getElementById("solutionstocksque2ans1");
+        let textarea1 = document.createElement("p");
+        let textarea2 = document.createElement("p");
+        let textarea3 = document.createElement("p");
+        button.textContent = "Hide"
+        let r = input2.value.split(" ")
+        textarea1.textContent = "Cash realised = " + input1.value + " - " + r[0] + "/" + r[1];
+        textarea2.textContent = "Cash realised " + (parseInt(input1.value) + " - " + (parseFloat(parseInt(r[1]) / parseInt(r[0]))))
+        textarea3.textContent = " Cash realised = " + (parseInt(input1.value) - (parseFloat(parseInt(r[1]) / parseInt(r[0]))))
+        stocksque2ans1 = false;
+        solutionpage.appendChild(textarea1);
+        solutionpage.appendChild(textarea2);
+        solutionpage.appendChild(textarea3);
+    } else {
+        let solutionpage = document.getElementById("solutionstocksque2ans1");
+        button.textContent = "Show"
+        stocksque2ans1 = true
+        a.removeChild(solutionpage)
+        let again = document.createElement("div");
+        again.id = "solutionstocksque2ans1";
+        a.appendChild(again)
+    }
+}
+let stocksque3ans1 = true;
+
+function StocksQue3Ans1() {
+    let a = document.getElementById("stocksque3ans1");
+    let input1 = document.getElementById("STOCKSQUE3ANSMARKET");
+    let input2 = document.getElementById("STOCKSQUE3ANSPURCHASED");
+    let input3 = document.getElementById("STOCKSQUE3ANSBROKERAGE");
+    let button = document.getElementById("STOCKSQUE3ANS1");
+    if (stocksque3ans1 === true) {
+        let solutionpage = document.getElementById("solutionstocksque3ans1");
+        let textarea1 = document.createElement("p");
+        let textarea2 = document.createElement("p");
+        let textarea3 = document.createElement("p");
+        button.textContent = "Hide"
+        let r = input2.value.split(" ")
+        textarea1.textContent = " A as cover = " + input1.value + " - " + input3.value + " = " + (parseInt(input1.value) - parseInt(input3.value)) + " m";
+        textarea2.textContent = "While A covers " + (parseInt(input1.value) - parseInt(input3.value)) + " , B covers = (" + r[1] + "/" + r[0] + ")*(" + input1.value + ") = " + (parseFloat(parseInt(r[1]) / parseInt(r[0])) * (parseInt(input1.value) - parseInt(input3.value)));
+        textarea3.textContent = "A wins by = (" + input1.value + " - " + (parseFloat(parseInt(r[1]) / parseInt(r[0])) * parseInt(input1.value)) + ") = " + (parseInt(input1.value) - (parseFloat(parseInt(r[1]) / parseInt(r[0])) * (parseInt(input1.value) - parseInt(input3.value)))) + " m";
+        stocksque3ans1 = false
+        solutionpage.appendChild(textarea1);
+        solutionpage.appendChild(textarea2);
+        solutionpage.appendChild(textarea3);
+    } else {
+        let solutionpage = document.getElementById("solutionstocksque3ans1");
+        button.textContent = "Show"
+        stocksque3ans1 = true
+        a.removeChild(solutionpage)
+        let again = document.createElement("div");
+        again.id = "solutionstocksque3ans1";
+        a.appendChild(again)
+    }
+}
+let stocksque4ans1 = true;
+
+function StocksQue4Ans1() {
+    let a = document.getElementById("stocksque4ans1");
+    let input1 = document.getElementById("STOCKSQUE4ANSSTOCK");
+    let button = document.getElementById("STOCKSQUE4ANS1");
+    if (stocksque4ans1 === true) {
+        let solutionpage = document.getElementById("solutionstocksque4ans1");
+        let textarea1 = document.createElement("p");
+        let textarea2 = document.createElement("p");
+        let textarea3 = document.createElement("p");
+        button.textContent = "Hide"
+        let r = input2.value.split(" ")
+        textarea1.textContent = " A as cover = " + input1.value + " - " + input3.value + " = " + (parseInt(input1.value) - parseInt(input3.value)) + " m";
+        textarea2.textContent = "While A covers " + (parseInt(input1.value) - parseInt(input3.value)) + " , B covers = (" + r[1] + "/" + r[0] + ")*(" + input1.value + ") = " + (parseFloat(parseInt(r[1]) / parseInt(r[0])) * (parseInt(input1.value) - parseInt(input3.value)));
+        textarea3.textContent = "A wins by = (" + input1.value + " - " + (parseFloat(parseInt(r[1]) / parseInt(r[0])) * parseInt(input1.value)) + ") = " + (parseInt(input1.value) - (parseFloat(parseInt(r[1]) / parseInt(r[0])) * (parseInt(input1.value) - parseInt(input3.value)))) + " m";
+        stocksque4ans1 = false
+        solutionpage.appendChild(textarea1);
+        solutionpage.appendChild(textarea2);
+        solutionpage.appendChild(textarea3);
+    } else {
+        let solutionpage = document.getElementById("solutionstocksque4ans1");
+        button.textContent = "Show"
+        stocksque4ans1 = true
+        a.removeChild(solutionpage)
+        let again = document.createElement("div");
+        again.id = "solutionstocksque4ans1";
+        a.appendChild(again)
+    }
+}
+let stocksque5ans1 = true;
+
+function StocksQue5Ans1() {
+    let a = document.getElementById("stocksque5ans1");
+    let input1 = document.getElementById("STOCKSQUE5ANSINVESTED");
+    let input2 = document.getElementById("STOCKSQUE5ANSSHARES");
+    let input3 = document.getElementById("STOCKSQUE5ANSDIVIDEND");
+    let button = document.getElementById("STOCKSQUE5ANS1");
+    if (stocksque5ans1 === true) {
+        let solutionpage = document.getElementById("solutionstocksque5ans1");
+        let textarea1 = document.createElement("p");
+        let textarea2 = document.createElement("p");
+        let textarea3 = document.createElement("p");
+        button.textContent = "Hide"
+        let r = input2.value.split(" ")
+        textarea1.textContent = " A as cover = " + input1.value + " - " + input3.value + " = " + (parseInt(input1.value) - parseInt(input3.value)) + " m";
+        textarea2.textContent = "While A covers " + (parseInt(input1.value) - parseInt(input3.value)) + " , B covers = (" + r[1] + "/" + r[0] + ")*(" + input1.value + ") = " + (parseFloat(parseInt(r[1]) / parseInt(r[0])) * (parseInt(input1.value) - parseInt(input3.value)));
+        textarea3.textContent = "A wins by = (" + input1.value + " - " + (parseFloat(parseInt(r[1]) / parseInt(r[0])) * parseInt(input1.value)) + ") = " + (parseInt(input1.value) - (parseFloat(parseInt(r[1]) / parseInt(r[0])) * (parseInt(input1.value) - parseInt(input3.value)))) + " m";
+        stocksque5ans1 = false
+        solutionpage.appendChild(textarea1);
+        solutionpage.appendChild(textarea2);
+        solutionpage.appendChild(textarea3);
+    } else {
+        let solutionpage = document.getElementById("solutionstocksque5ans1");
+        button.textContent = "Show"
+        stocksque5ans1 = true
+        a.removeChild(solutionpage)
+        let again = document.createElement("div");
+        again.id = "solutionstocksque5ans1";
+        a.appendChild(again)
+    }
+}
+let stocksque6ans1 = true;
+
+function StocksQue6Ans1() {
+    let a = document.getElementById("stocksque6ans1");
+    let input1 = document.getElementById("STOCKSQUE1ANSSTOCK");
+    let input2 = document.getElementById("STOCKSQUE1ANSDISCOUNT");
+    let button = document.getElementById("STOCKSQUE6ANS1");
+    if (stocksque6ans1 === true) {
+        let solutionpage = document.getElementById("solutionstocksque6ans1");
+        let textarea1 = document.createElement("p");
+        let textarea2 = document.createElement("p");
+        let textarea3 = document.createElement("p");
+        button.textContent = "Hide"
+        let r = input2.value.split(" ")
+        textarea1.textContent = " A as cover = " + input1.value + " - " + input3.value + " = " + (parseInt(input1.value) - parseInt(input3.value)) + " m";
+        textarea2.textContent = "While A covers " + (parseInt(input1.value) - parseInt(input3.value)) + " , B covers = (" + r[1] + "/" + r[0] + ")*(" + input1.value + ") = " + (parseFloat(parseInt(r[1]) / parseInt(r[0])) * (parseInt(input1.value) - parseInt(input3.value)));
+        textarea3.textContent = "A wins by = (" + input1.value + " - " + (parseFloat(parseInt(r[1]) / parseInt(r[0])) * parseInt(input1.value)) + ") = " + (parseInt(input1.value) - (parseFloat(parseInt(r[1]) / parseInt(r[0])) * (parseInt(input1.value) - parseInt(input3.value)))) + " m";
+        stocksque6ans1 = false
+        solutionpage.appendChild(textarea1);
+        solutionpage.appendChild(textarea2);
+        solutionpage.appendChild(textarea3);
+    } else {
+        let solutionpage = document.getElementById("solutionstocksque6ans1");
+        button.textContent = "Show"
+        stocksque6ans1 = true
+        a.removeChild(solutionpage)
+        let again = document.createElement("div");
+        again.id = "solutionstocksque6ans1";
+        a.appendChild(again)
+    }
+}
+let stocksque7ans1 = true;
+
+function StocksQue7Ans1() {
+    let a = document.getElementById("stocksque7ans1");
+    let input1 = document.getElementById("STOCKSQUE7ANSINVESTED");
+    let input2 = document.getElementById("STOCKSQUE7ANSMONEY");
+    let input3 = document.getElementById("STOCKSQUE7ANSINCOME");
+    let button = document.getElementById("STOCKSQUE7ANS1");
+    if (stocksque7ans1 === true) {
+        let solutionpage = document.getElementById("solutionstocksque7ans1");
+        let textarea1 = document.createElement("p");
+        let textarea2 = document.createElement("p");
+        let textarea3 = document.createElement("p");
+        button.textContent = "Hide"
+        let r = input2.value.split(" ")
+        textarea1.textContent = " A as cover = " + input1.value + " - " + input3.value + " = " + (parseInt(input1.value) - parseInt(input3.value)) + " m";
+        textarea2.textContent = "While A covers " + (parseInt(input1.value) - parseInt(input3.value)) + " , B covers = (" + r[1] + "/" + r[0] + ")*(" + input1.value + ") = " + (parseFloat(parseInt(r[1]) / parseInt(r[0])) * (parseInt(input1.value) - parseInt(input3.value)));
+        textarea3.textContent = "A wins by = (" + input1.value + " - " + (parseFloat(parseInt(r[1]) / parseInt(r[0])) * parseInt(input1.value)) + ") = " + (parseInt(input1.value) - (parseFloat(parseInt(r[1]) / parseInt(r[0])) * (parseInt(input1.value) - parseInt(input3.value)))) + " m";
+        stocksque7ans1 = false
+        solutionpage.appendChild(textarea1);
+        solutionpage.appendChild(textarea2);
+        solutionpage.appendChild(textarea3);
+    } else {
+        let solutionpage = document.getElementById("solutionstocksque7ans1");
+        button.textContent = "Show"
+        stocksque1ans1 = true
+        a.removeChild(solutionpage)
+        let again = document.createElement("div");
+        again.id = "solutionstocksque7ans1";
+        a.appendChild(again)
+    }
+}
+let stocksque8ans1 = true;
+
+function StocksQue8Ans1() {
+    let a = document.getElementById("stocksque8ans1");
+    let input1 = document.getElementById("STOCKSQUE8ANSSTOCK");
+    let input2 = document.getElementById("STOCKSQUE8ANSDISCOUNT");
+    let input3 = document.getElementById("STOCKSQUE8ANSBROKERAGE");
+    let button = document.getElementById("STOCKSQUE8ANS1");
+    if (stocksque8ans1 === true) {
+        let solutionpage = document.getElementById("solutionstocksque8ans1");
+        let textarea1 = document.createElement("p");
+        let textarea2 = document.createElement("p");
+        let textarea3 = document.createElement("p");
+        button.textContent = "Hide"
+        let r = input2.value.split(" ")
+        textarea1.textContent = " A as cover = " + input1.value + " - " + input3.value + " = " + (parseInt(input1.value) - parseInt(input3.value)) + " m";
+        textarea2.textContent = "While A covers " + (parseInt(input1.value) - parseInt(input3.value)) + " , B covers = (" + r[1] + "/" + r[0] + ")*(" + input1.value + ") = " + (parseFloat(parseInt(r[1]) / parseInt(r[0])) * (parseInt(input1.value) - parseInt(input3.value)));
+        textarea3.textContent = "A wins by = (" + input1.value + " - " + (parseFloat(parseInt(r[1]) / parseInt(r[0])) * parseInt(input1.value)) + ") = " + (parseInt(input1.value) - (parseFloat(parseInt(r[1]) / parseInt(r[0])) * (parseInt(input1.value) - parseInt(input3.value)))) + " m";
+        stocksque8ans1 = false
+        solutionpage.appendChild(textarea1);
+        solutionpage.appendChild(textarea2);
+        solutionpage.appendChild(textarea3);
+    } else {
+        let solutionpage = document.getElementById("solutionstocksque8ans1");
+        button.textContent = "Show"
+        stocksque8ans1 = true
+        a.removeChild(solutionpage)
+        let again = document.createElement("div");
+        again.id = "solutionstocksque8ans1";
+        a.appendChild(again)
+    }
+}
+let stocksque9ans1 = true;
+
+function StocksQue9Ans1() {
+    let a = document.getElementById("stocksque9ans1");
+    let input1 = document.getElementById("STOCKSQUE9ANSSTOCK1");
+    let input2 = document.getElementById("STOCKSQUE9ANSSTOCKS2");
+    let button = document.getElementById("STOCKSQUE9ANS1");
+    if (stocksque9ans1 === true) {
+        let solutionpage = document.getElementById("solutionstocksque9ans1");
+        let textarea1 = document.createElement("p");
+        let textarea2 = document.createElement("p");
+        let textarea3 = document.createElement("p");
+        button.textContent = "Hide"
+        let r = input2.value.split(" ")
+        textarea1.textContent = " A as cover = " + input1.value + " - " + input3.value + " = " + (parseInt(input1.value) - parseInt(input3.value)) + " m";
+        textarea2.textContent = "While A covers " + (parseInt(input1.value) - parseInt(input3.value)) + " , B covers = (" + r[1] + "/" + r[0] + ")*(" + input1.value + ") = " + (parseFloat(parseInt(r[1]) / parseInt(r[0])) * (parseInt(input1.value) - parseInt(input3.value)));
+        textarea3.textContent = "A wins by = (" + input1.value + " - " + (parseFloat(parseInt(r[1]) / parseInt(r[0])) * parseInt(input1.value)) + ") = " + (parseInt(input1.value) - (parseFloat(parseInt(r[1]) / parseInt(r[0])) * (parseInt(input1.value) - parseInt(input3.value)))) + " m";
+        stocksque9ans1 = false
+        solutionpage.appendChild(textarea1);
+        solutionpage.appendChild(textarea2);
+        solutionpage.appendChild(textarea3);
+    } else {
+        let solutionpage = document.getElementById("solutionstocksque9ans1");
+        button.textContent = "Show"
+        stocksque9ans1 = true
+        a.removeChild(solutionpage)
+        let again = document.createElement("div");
+        again.id = "solutionstocksque9ans1";
+        a.appendChild(again)
+    }
+}
+let stocksque10ans1 = true;
+
+function StocksQue10Ans1() {
+    let a = document.getElementById("stocksque10ans1");
+    let input1 = document.getElementById("STOCKSQUE10ANSASTOCK");
+    let input2 = document.getElementById("STOCKSQUE10ANSMONEY");
+    let input3 = document.getElementById("STOCKSQUE10ANSBSTOCK");
+    let button = document.getElementById("STOCKSQUE10ANS1");
+    if (stocksque10ans1 === true) {
+        let solutionpage = document.getElementById("solutionstocksque10ans1");
+        let textarea1 = document.createElement("p");
+        let textarea2 = document.createElement("p");
+        let textarea3 = document.createElement("p");
+        button.textContent = "Hide"
+        let r = input2.value.split(" ")
+        textarea1.textContent = " A as cover = " + input1.value + " - " + input3.value + " = " + (parseInt(input1.value) - parseInt(input3.value)) + " m";
+        textarea2.textContent = "While A covers " + (parseInt(input1.value) - parseInt(input3.value)) + " , B covers = (" + r[1] + "/" + r[0] + ")*(" + input1.value + ") = " + (parseFloat(parseInt(r[1]) / parseInt(r[0])) * (parseInt(input1.value) - parseInt(input3.value)));
+        textarea3.textContent = "A wins by = (" + input1.value + " - " + (parseFloat(parseInt(r[1]) / parseInt(r[0])) * parseInt(input1.value)) + ") = " + (parseInt(input1.value) - (parseFloat(parseInt(r[1]) / parseInt(r[0])) * (parseInt(input1.value) - parseInt(input3.value)))) + " m";
+        stocksque10ans1 = false
+        solutionpage.appendChild(textarea1);
+        solutionpage.appendChild(textarea2);
+        solutionpage.appendChild(textarea3);
+    } else {
+        let solutionpage = document.getElementById("solutionstocksque10ans1");
+        button.textContent = "Show"
+        stocksque10ans1 = true
+        a.removeChild(solutionpage)
+        let again = document.createElement("div");
+        again.id = "solutionstocksque10ans1";
+        a.appendChild(again)
+    }
+}
