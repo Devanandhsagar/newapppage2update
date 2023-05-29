@@ -1239,6 +1239,155 @@
             <button class="btn-secondary" onclick="display('sectionstockstopic')">back</button>
         </div>
     </div>
+     <div id="sectionpercentagetopic">
+        <h1 class="heading_ages">Select type method of Question</h1>
+        <div class="mt-3">
+            <p class="m-5">
+                1) How is 3/4 expressed as percentage ? <button class="button" onclick="display('sectionpercentageques1')">find</button>
+            </p>
+            <p class="m-5">
+                2). 12% of 5000 = ? <button class="button" onclick="display('sectionpercentageques2')">find</button>
+            </p>
+            <p class="m-5">3)In an examination Sumit scores a total of 626 marks
+                out of 850. What is his approximate percentage in
+                the examination ? <button class="button" onclick="display('sectionpercentageques3')">find</button></p>
+            <p class="m-5">4)I paid 27.20 as sales tax on a watch worth 340.
+                Find the rate of sales tax ? <button class="button" onclick="display('sectionpercentageques4')">find</button></p>
+            <p class="m-5">
+                5) 40% of 265 + 35% of 180 = 50% of ? <button class="button" onclick="display('sectionpercentageques5')">find</button>
+            </p>
+            <p class="m-5">
+                6)If an electricity bill is paid before due date, one
+                gets a reduction of 4% on the amount of the bill. By paying the bill before due date
+                a person got a reduction of 13. The amount of his electricity bill was ? <button class="button" onclick="display('sectionpercentageques6')">find</button>
+            </p>
+            <p class="m-5">7)Nupur invests 89856, which is 26% of her annual income, in mutual funds. What is her monthly income ? <button class="button" onclick="display('sectionpercentageques7')">find</button></p>
+            <p class="m-5">8)76% of the students in a school are boys. If the number of girls is 204, then the total number of students is ? <button class="button" onclick="display('sectionpercentageques8')">find</button></p>
+
+        </div>
+        <div class="d-flex flex-row justify-content-end">
+            <button class="btn-secondary" onclick="display('sectiontopichomepage')">back</button>
+        </div>
+    </div>
+    <div id="sectionpercentageques1">
+        <div class="m-3 pl-3">
+            <input type="text" id="PERCENTAGEQUE1ANSVALUE" placeholder="Give value  with '/' " />
+            <div class="d-flex flex-row" id="percentageque1ans1">
+                <p>1) expressed as percentage ?
+                    <button class="button" onclick="PercentageQue1Ans1()" id="PERCENTAGEQUE1ANS1">Show</button>
+                </p>
+                <div id="solutionpercentageque1ans1"></div>
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-end">
+            <button class="btn-secondary" onclick="display('sectionpercentagetopic')">back</button>
+        </div>
+    </div>
+    <div id="sectionpercentageques2">
+        <div class="m-3 pl-3">
+            <input type="text" id="PERCENTAGEQUE2ANSVALUE" placeholder="Give n % and value  with space sperator" size="35" />
+            <div class="d-flex flex-row" id="percentageque2ans1">
+                <p>1) n% of value ?
+                    <button class="button" onclick="PercentageQue2Ans1()" id="PERCENTAGEQUE2ANS1">Show</button>
+                </p>
+                <div id="solutionpercentageque2ans1"></div>
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-end">
+            <button class="btn-secondary" onclick="display('sectionpercentagetopic')">back</button>
+        </div>
+    </div>
+    <div id="sectionpercentageques3">
+        <div class="m-3 pl-3">
+            <input type="text" id="PERCENTAGEQUE3ANSVALUE1" placeholder="No of marks" />
+            <input type="text" id="PERCENTAGEQUE3ANSVALUE2" placeholder="Total no of marks" />
+            <div class="d-flex flex-row" id="percentageque3ans1">
+                <p>1) What is his approximate percentage in the examination ?
+                    <button class="button" onclick="PercentageQue3Ans1()" id="PERCENTAGEQUE3ANS1">Show</button>
+                </p>
+                <div id="solutionpercentageque3ans1"></div>
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-end">
+            <button class="btn-secondary" onclick="display('sectionpercentagetopic')">back</button>
+        </div>
+    </div>
+    <div id="sectionpercentageques4">
+        <div class="m-3 pl-3">
+            <input type="text" id="PERCENTAGEQUE4ANSTAX" placeholder="Paid sales tax is" />
+            <input type="text" id="PERCENTAGEQUE4ANSWORTH" placeholder="Worth of the watch is" />
+            <div class="d-flex flex-row" id="percentageque4ans1">
+                <p>1) Find the rate of sales tax ?
+                    <button class="button" onclick="PercentageQue4Ans1()" id="PERCENTAGEQUE4ANS1">Show</button>
+                </p>
+                <div id="solutionpercentageque4ans1"></div>
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-end">
+            <button class="btn-secondary" onclick="display('sectionpercentagetopic')">back</button>
+        </div>
+    </div>
+    <div id="sectionpercentageques5">
+        <div class="m-3 pl-3">
+            <input type="text" id="PERCENTAGEQUE5ANSVALUE1" placeholder="n % and value with space sperator" size="35" />
+            <input type="text" id="PERCENTAGEQUE5ANSVALUE2" placeholder="n % and value with space sperator" size="35" />
+            <input type="text" id="PERCENTAGEQUE5ANSVALUE3" placeholder="Enter n % of value of x" size="35" />
+            <div class="d-flex flex-row" id="percentageque5ans1">
+                <p>1) Enter n % of value ?
+                    <button class="button" onclick="PercentageQue5Ans1()" id="PERCENTAGEQUE5ANS1">Show</button>
+                </p>
+                <div id="solutionpercentageque5ans1"></div>
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-end">
+            <button class="btn-secondary" onclick="display('sectionpercentagetopic')">back</button>
+        </div>
+    </div>
+    <div id="sectionpercentageques6">
+        <div class="m-3 pl-3">
+            <input type="text" id="PERCENTAGEQUE6ANSVALUE1" placeholder="Reduction of n %" />
+            <input type="text" id="PERCENTAGEQUE6ANSVALUE2" placeholder="Reduction of got" />
+            <div class="d-flex flex-row" id="percentageque6ans1">
+                <p>1) The amount of his electricity bill was ?
+                    <button class="button" onclick="PercentageQue6Ans1()" id="PERCENTAGEQUE6ANS1">Show</button>
+                </p>
+                <div id="solutionpercentageque6ans1"></div>
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-end">
+            <button class="btn-secondary" onclick="display('sectionpercentagetopic')">back</button>
+        </div>
+    </div>
+    <div id="sectionpercentageques7">
+        <div class="m-3 pl-3">
+            <input type="text" id="PERCENTAGEQUE7ANSVALUE1" placeholder="Nupur annual n %" />
+            <input type="text" id="PERCENTAGEQUE7ANSVALUE2" placeholder="Nupur invests is " />
+            <div class="d-flex flex-row" id="percentageque7ans1">
+                <p>1) The amount of his electricity bill was ?
+                    <button class="button" onclick="PercentageQue7Ans1()" id="PERCENTAGEQUE7ANS1">Show</button>
+                </p>
+                <div id="solutionpercentageque7ans1"></div>
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-end">
+            <button class="btn-secondary" onclick="display('sectionpercentagetopic')">back</button>
+        </div>
+    </div>
+    <div id="sectionpercentageques8">
+        <div class="m-3 pl-3">
+            <input type="text" id="PERCENTAGEQUE8ANSVALUE1" placeholder="n % students of boys" />
+            <input type="text" id="PERCENTAGEQUE8ANSVALUE2" placeholder="No of girls " />
+            <div class="d-flex flex-row" id="percentageque8ans1">
+                <p>1)total number of students is ?
+                    <button class="button" onclick="PercentageQue8Ans1()" id="PERCENTAGEQUE8ANS1">Show</button>
+                </p>
+                <div id="solutionpercentageque8ans1"></div>
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-end">
+            <button class="btn-secondary" onclick="display('sectionpercentagetopic')">back</button>
+        </div>
+    </div>
     <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
 </body>
 
