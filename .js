@@ -2,13 +2,12 @@ let que1ans1 = true;
 
 function AgeQue1Ans1() {
     let a = document.getElementById("agesque1ans1");
-    //let solutionpage = document.getElementById("solutionagesque1ans1");
     let input1 = document.getElementById("a1");
     let input2 = document.getElementById("a2");
     let input3 = document.getElementById("n1");
     let input4 = document.getElementById("b1");
     let input5 = document.getElementById("b2");
-
+    let button = document.getElementById("AGEQUE1ANS1");
     if (que1ans1 === true) {
         let solutionpage = document.getElementById("solutionagesque1ans1");
         let textarea1 = document.createElement("p");
@@ -17,6 +16,7 @@ function AgeQue1Ans1() {
         let textarea4 = document.createElement("p");
         let textarea5 = document.createElement("p");
         let textarea6 = document.createElement("p");
+        button.textContent = "Hide"
         textarea1.textContent = ">> convert equation =    b2(a1*x - n1) = b1(x-n1) ";
         textarea2.textContent = "Equation = " + input5.value + "(" + input1.value + "*x - " + input3.value + " = " + input4.value + "( x -" + input3.value + ")"
         textarea3.textContent = "x value =  (b2* n1 - b1*n1)/(b2*a1 - b1)";
@@ -29,9 +29,9 @@ function AgeQue1Ans1() {
         solutionpage.appendChild(textarea3);
         solutionpage.appendChild(textarea4);
         solutionpage.appendChild(textarea6);
-
     } else {
         let solutionpage = document.getElementById("solutionagesque1ans1");
+        button.textContent = "Show"
         que1ans1 = true
         a.removeChild(solutionpage)
         let again = document.createElement("div");
@@ -43,12 +43,12 @@ let que1ans2 = true;
 
 function AgeQue1Ans2() {
     let a = document.getElementById("agesque1ans2");
+    let button = document.getElementById("AGEQUE1ANS2");
     let input1 = document.getElementById("a1");
     let input2 = document.getElementById("a2");
     let input3 = document.getElementById("n1");
     let input4 = document.getElementById("b1");
     let input5 = document.getElementById("b2");
-
     if (que1ans2 === true) {
         let solutionpage = document.getElementById("solutionagesque1ans2");
         let textarea1 = document.createElement("p");
@@ -57,6 +57,7 @@ function AgeQue1Ans2() {
         let textarea4 = document.createElement("p");
         let textarea5 = document.createElement("p");
         let textarea6 = document.createElement("p");
+        button.textContent = "Hide";
         textarea1.textContent = "2) convert equation =    b2(a1*x - n1) = b1(x-n1) ";
         textarea2.textContent = "Equation = " + input5.value + "(" + input1.value + "*x - " + input3.value + " = " + input4.value + "( x -" + input3.value + ")"
         textarea3.textContent = "x value =  (b2* n1 - b1*n1)/(b2*a1 - b1)";
@@ -69,9 +70,9 @@ function AgeQue1Ans2() {
         solutionpage.appendChild(textarea3);
         solutionpage.appendChild(textarea4);
         solutionpage.appendChild(textarea6);
-
     } else {
         let solutionpage = document.getElementById("solutionagesque1ans2");
+        button.textContent = "Show";
         que1ans2 = true
         a.removeChild(solutionpage)
         let again = document.createElement("div");
@@ -83,12 +84,12 @@ let que1ans3 = true;
 
 function AgeQue1Ans3() {
     let a = document.getElementById("agesque1ans3");
+    let button = document.getElementById("AGEQUE1ANS3");
     let input1 = document.getElementById("a1");
     let input2 = document.getElementById("a2");
     let input3 = document.getElementById("n1");
     let input4 = document.getElementById("b1");
     let input5 = document.getElementById("b2");
-
     if (que1ans3 === true) {
         let solutionpage = document.getElementById("solutionagesque1ans3");
         let textarea1 = document.createElement("p");
@@ -97,6 +98,7 @@ function AgeQue1Ans3() {
         let textarea4 = document.createElement("p");
         let textarea5 = document.createElement("p");
         let textarea6 = document.createElement("p");
+        button.textContent = "Hide";
         textarea1.textContent = "3) convert equation =    b2(a1*x - n1) = b1(x-n1) ";
         textarea2.textContent = "Equation = " + input5.value + "(" + input1.value + "*x - " + input3.value + " = " + input4.value + "( x -" + input3.value + ")";
         textarea3.textContent = "x value =  (b2* n1 - b1*n1)/(b2*a1 - b1)"
@@ -109,9 +111,9 @@ function AgeQue1Ans3() {
         solutionpage.appendChild(textarea3);
         solutionpage.appendChild(textarea4);
         solutionpage.appendChild(textarea6);
-
     } else {
         let solutionpage = document.getElementById("solutionagesque1ans3");
+        button.textContent = "Show";
         que1ans3 = true
         a.removeChild(solutionpage)
         let again = document.createElement("div");
@@ -123,12 +125,12 @@ let que1ans4 = true;
 
 function AgeQue1Ans4() {
     let a = document.getElementById("agesque1ans4");
+    let button = document.getElementById("AGEQUE1ANS4");
     let input1 = document.getElementById("a1");
     let input2 = document.getElementById("a2");
     let input3 = document.getElementById("n1");
     let input4 = document.getElementById("b1");
     let input5 = document.getElementById("b2");
-
     if (que1ans4 === true) {
         let solutionpage = document.getElementById("solutionagesque1ans4");
         let textarea1 = document.createElement("p");
@@ -137,6 +139,7 @@ function AgeQue1Ans4() {
         let textarea4 = document.createElement("p");
         let textarea5 = document.createElement("p");
         let textarea6 = document.createElement("p");
+        button.textContent = "Hide";
         textarea1.textContent = "4) convert equation =    b2(a1*x - n1) = b1(x-n1) ";
         textarea2.textContent = "Equation = " + input5.value + "(" + input1.value + "*x - " + input3.value + " = " + input4.value + "( x -" + input3.value + ")"
         textarea3.textContent = "x value =  (b2* n1 - b1*n1)/(b2*a1 - b1)";
@@ -149,9 +152,9 @@ function AgeQue1Ans4() {
         solutionpage.appendChild(textarea3);
         solutionpage.appendChild(textarea4);
         solutionpage.appendChild(textarea6);
-
     } else {
         let solutionpage = document.getElementById("solutionagesque1ans4");
+        button.textContent = "Show";
         que1ans4 = true
         a.removeChild(solutionpage)
         let again = document.createElement("div");
@@ -163,12 +166,12 @@ let que1ans5 = true;
 
 function AgeQue1Ans5() {
     let a = document.getElementById("agesque1ans5");
+    let button = document.getElementById("AGEQUE1ANS5");
     let input1 = document.getElementById("a1");
     let input2 = document.getElementById("a2");
     let input3 = document.getElementById("n1");
     let input4 = document.getElementById("b1");
     let input5 = document.getElementById("b2");
-
     if (que1ans5 === true) {
         let solutionpage = document.getElementById("solutionagesque1ans5");
         let textarea1 = document.createElement("p");
@@ -177,12 +180,12 @@ function AgeQue1Ans5() {
         let textarea4 = document.createElement("p");
         let textarea5 = document.createElement("p");
         let textarea6 = document.createElement("p");
+        button.textContent = "Hide";
         textarea1.textContent = " 5) convert equation =    b2(a1*x - n1) = b1(x-n1) ";
         textarea2.textContent = "Equation = " + input5.value + "(" + input1.value + "*x - " + input3.value + " = " + input4.value + "( x -" + input3.value + ")"
         textarea3.textContent = "x value =  (b2* n1 - b1*n1)/(b2*a1 - b1)";
         textarea4.textContent = "x = " + (((parseInt(input5.value) * (parseInt(input3.value))) - (parseInt(input4.value) * (parseInt(input3.value)))) / ((parseInt(input5.value) * (parseInt(input1.value))) - parseInt(input4.value)))
         textarea5.textContent = (((parseInt(input5.value) * (parseInt(input3.value))) - (parseInt(input4.value) * (parseInt(input3.value)))) / ((parseInt(input5.value) * (parseInt(input1.value))) - parseInt(input4.value)))
-
         textarea6.textContent = "sum of ages " + ((parseInt(input2.value) * parseInt(textarea5.textContent)) + (parseInt(input1.value) * (parseInt(textarea5.textContent))))
         que1ans5 = false
         solutionpage.appendChild(textarea1);
@@ -190,9 +193,9 @@ function AgeQue1Ans5() {
         solutionpage.appendChild(textarea3);
         solutionpage.appendChild(textarea4);
         solutionpage.appendChild(textarea6);
-
     } else {
         let solutionpage = document.getElementById("solutionagesque1ans5");
+        button.textContent = "Show";
         que1ans5 = true
         a.removeChild(solutionpage)
         let again = document.createElement("div");
@@ -204,12 +207,12 @@ let que1ans6 = true;
 
 function AgeQue1Ans6() {
     let a = document.getElementById("agesque1ans6");
+    let button = document.getElementById("AGEQUE1ANS6");
     let input1 = document.getElementById("a1");
     let input2 = document.getElementById("a2");
     let input3 = document.getElementById("n1");
     let input4 = document.getElementById("b1");
     let input5 = document.getElementById("b2");
-
     if (que1ans6 === true) {
         let solutionpage = document.getElementById("solutionagesque1ans6");
         let textarea1 = document.createElement("p");
@@ -218,22 +221,22 @@ function AgeQue1Ans6() {
         let textarea4 = document.createElement("p");
         let textarea5 = document.createElement("p");
         let textarea6 = document.createElement("p");
+        button.textContent = "Hide";
         textarea1.textContent = " 6 ) convert equation =    b2(a1*x - n1) = b1(x-n1) ";
         textarea2.textContent = "Equation = " + input5.value + "(" + input1.value + "*x - " + input3.value + " = " + input4.value + "( x -" + input3.value + ")"
         textarea3.textContent = "x value =  (b2* n1 - b1*n1)/(b2*a1 - b1)";
-
         textarea4.textContent = "x = " + (((parseInt(input5.value) * (parseInt(input3.value))) - (parseInt(input4.value) * (parseInt(input3.value)))) / ((parseInt(input5.value) * (parseInt(input1.value))) - parseInt(input4.value)))
         textarea5.textContent = (((parseInt(input5.value) * (parseInt(input3.value))) - (parseInt(input4.value) * (parseInt(input3.value)))) / ((parseInt(input5.value) * (parseInt(input1.value))) - parseInt(input4.value)))
-        textarea6.textContent = "Difference of ages " + ((parseInt(input2.value) * parseInt(textarea5.textContent)) - (parseInt(input1.value) * (parseInt(textarea5.textContent))))
+        textarea6.textContent = "Difference of ages " + Math.abs((parseInt(input2.value) * parseInt(textarea5.textContent)) - (parseInt(input1.value) * (parseInt(textarea5.textContent))))
         que1ans6 = false
         solutionpage.appendChild(textarea1);
         solutionpage.appendChild(textarea2);
         solutionpage.appendChild(textarea3);
         solutionpage.appendChild(textarea4);
         solutionpage.appendChild(textarea6);
-
     } else {
         let solutionpage = document.getElementById("solutionagesque1ans6");
+        button.textContent = "Show";
         que1ans6 = true
         a.removeChild(solutionpage)
         let again = document.createElement("div");
@@ -245,11 +248,11 @@ let que2ans1 = true;
 
 function AgeQue2Ans1() {
     let a = document.getElementById("agesque2ans1");
+    let button = document.getElementById("AGEQUE2ANS1");
     let input1 = document.getElementById("AGESQUE2ANSA1");
     let input2 = document.getElementById("AGESQUE2ANSA2");
     let input3 = document.getElementById("AGESQUE2ANSASUM");
     let input4 = document.getElementById("AGESQUE2ANSN1");
-
     if (que2ans1 === true) {
         let solutionpage = document.getElementById("solutionagesque2ans1");
         let textarea1 = document.createElement("p");
@@ -258,6 +261,7 @@ function AgeQue2Ans1() {
         let textarea4 = document.createElement("p");
         let textarea5 = document.createElement("p");
         let textarea6 = document.createElement("p");
+        button.textContent = "Hide";
         textarea1.textContent = "1) A age is " + input3.value + "* (" + input1.value + "/ (" + input1.value + "+" + input2.value + "))";
         textarea2.textContent = "A ages = " + (parseInt(input3.value) * (parseInt(input1.value) / (parseInt(input1.value) + parseInt(input2.value))))
         textarea3.textContent = "B ages = " + (parseInt(input3.value) - ((parseInt(input3.value) * (parseInt(input1.value) / (parseInt(input1.value) + parseInt(input2.value))))))
@@ -273,6 +277,7 @@ function AgeQue2Ans1() {
         solutionpage.appendChild(textarea6);
     } else {
         let solutionpage = document.getElementById("solutionagesque2ans1");
+        button.textContent = "Show";
         que2ans1 = true
         a.removeChild(solutionpage)
         let again = document.createElement("div");
@@ -284,11 +289,11 @@ let que2ans2 = true;
 
 function AgeQue2Ans2() {
     let a = document.getElementById("agesque2ans2");
+    let button = document.getElementById("AGEQUE2ANS2");
     let input1 = document.getElementById("AGESQUE2ANSA1");
     let input2 = document.getElementById("AGESQUE2ANSA2");
     let input3 = document.getElementById("AGESQUE2ANSASUM");
     let input4 = document.getElementById("AGESQUE2ANSN1");
-
     if (que2ans2 === true) {
         let solutionpage = document.getElementById("solutionagesque2ans2");
         let textarea1 = document.createElement("p");
@@ -297,12 +302,13 @@ function AgeQue2Ans2() {
         let textarea4 = document.createElement("p");
         let textarea5 = document.createElement("p");
         let textarea6 = document.createElement("p");
+        button.textContent = "Hide";
         textarea1.textContent = "1) A age is " + input3.value + "* (" + input1.value + "/ (" + input1.value + "+" + input2.value + "))";
         textarea2.textContent = "A ages = " + (parseInt(input3.value) * (parseInt(input1.value) / (parseInt(input1.value) + parseInt(input2.value))))
         textarea3.textContent = "B ages = " + (parseInt(input3.value) - ((parseInt(input3.value) * (parseInt(input1.value) / (parseInt(input1.value) + parseInt(input2.value))))))
-        textarea4.textContent = "A age is after n years = " + ((parseInt(input3.value) * (parseInt(input1.value) / (parseInt(input1.value) + parseInt(input2.value))) - parseInt(input4.value)))
-        textarea5.textContent = "B age is after n years = " + ((parseInt(input3.value) - ((parseInt(input3.value) * (parseInt(input1.value) / (parseInt(input1.value) + parseInt(input2.value)))))) - parseInt(input4.value))
-        textarea6.textContent = "Ratio b1 and b2 = " + ((parseInt(input3.value) * (parseInt(input1.value) / (parseInt(input1.value) + parseInt(input2.value))) + parseInt(input4.value))) + "/" + ((parseInt(input3.value) - ((parseInt(input3.value) * (parseInt(input1.value) / (parseInt(input1.value) + parseInt(input2.value)))))) + parseInt(input4.value))
+        textarea4.textContent = "A age is after n years = " + ((parseInt(input3.value) * (parseInt(input1.value) / (parseInt(input1.value) + parseInt(input2.value))) - parseInt(input4.value)));
+        textarea5.textContent = "B age is after n years = " + ((parseInt(input3.value) - ((parseInt(input3.value) * (parseInt(input1.value) / (parseInt(input1.value) + parseInt(input2.value)))))) - parseInt(input4.value));
+        textarea6.textContent = "Ratio b1 and b2 = " + ((parseInt(input3.value) * (parseInt(input1.value) / (parseInt(input1.value) + parseInt(input2.value))) - parseInt(input4.value))) + "/" + ((parseInt(input3.value) - ((parseInt(input3.value) * (parseInt(input1.value) / (parseInt(input1.value) + parseInt(input2.value)))))) - parseInt(input4.value))
         que2ans2 = false;
         solutionpage.appendChild(textarea1);
         solutionpage.appendChild(textarea2);
@@ -312,6 +318,7 @@ function AgeQue2Ans2() {
         solutionpage.appendChild(textarea6);
     } else {
         let solutionpage = document.getElementById("solutionagesque2ans2");
+        button.textContent = "Show";
         que2ans2 = true
         a.removeChild(solutionpage)
         let again = document.createElement("div");
@@ -323,13 +330,13 @@ let que3ans1 = true;
 
 function AgeQue3Ans1() {
     let a = document.getElementById("agesque3ans1");
+    let button = document.getElementById("AGEQUE3ANS1");
     let input1 = document.getElementById("AGESQUE3ANSN");
     let input2 = document.getElementById("AGESQUE3ANSNUMA2");
     let input3 = document.getElementById("AGESQUE3ANSDENOA2");
     let input4 = document.getElementById("AGESQUE3ANSDNUMA1");
     let input5 = document.getElementById("AGESQUE3ANSDDENOA2");
     let input6 = document.getElementById("AGESQUE3ANSN1");
-
     if (que3ans1 === true) {
         let solutionpage = document.getElementById("solutionagesque3ans1");
         let textarea1 = document.createElement("p");
@@ -339,6 +346,7 @@ function AgeQue3Ans1() {
         let textarea5 = document.createElement("p");
         let textarea6 = document.createElement("p");
         let textarea7 = document.createElement("p");
+        button.textContent = "Hide";
         textarea1.textContent = "1) x + " + input1.value + " = (" + input2.value + "/" + input3.value + ")*x"
         textarea2.textContent = parseFloat(1 - parseFloat(parseInt(input2.value) / parseInt(input3.value)))
         if (textarea2.textContent <= 0) {
@@ -361,6 +369,7 @@ function AgeQue3Ans1() {
         solutionpage.appendChild(textarea7);
     } else {
         let solutionpage = document.getElementById("solutionagesque3ans1");
+        button.textContent = "Show";
         que3ans1 = true
         a.removeChild(solutionpage)
         let again = document.createElement("div");
@@ -372,13 +381,13 @@ let que3ans2 = true;
 
 function AgeQue3Ans2() {
     let a = document.getElementById("agesque3ans2");
+    let button = document.getElementById("AGEQUE3ANS2");
     let input1 = document.getElementById("AGESQUE3ANSN");
     let input2 = document.getElementById("AGESQUE3ANSNUMA2");
     let input3 = document.getElementById("AGESQUE3ANSDENOA2");
     let input4 = document.getElementById("AGESQUE3ANSDNUMA1");
     let input5 = document.getElementById("AGESQUE3ANSDDENOA2");
     let input6 = document.getElementById("AGESQUE3ANSN1");
-
     if (que3ans2 === true) {
         let solutionpage = document.getElementById("solutionagesque3ans2");
         let textarea1 = document.createElement("p");
@@ -387,7 +396,7 @@ function AgeQue3Ans2() {
         let textarea4 = document.createElement("p");
         let textarea5 = document.createElement("p");
         let textarea6 = document.createElement("p");
-        //let textarea7 = document.createElement("p");
+        button.textContent = "Hide";
         textarea1.textContent = "1) x + " + input1.value + " = (" + input2.value + "/" + input3.value + ")*x"
         textarea2.textContent = parseFloat(1 - parseFloat(parseInt(input2.value) / parseInt(input3.value)))
         if (textarea2.textContent <= 0) {
@@ -399,7 +408,6 @@ function AgeQue3Ans2() {
         textarea4.textContent = ((parseInt(parseInt(input1.value) / parseFloat(textarea2.textContent))) + parseInt(1))
         textarea5.textContent = "farah age  = " + (((parseInt(parseInt(input1.value) / parseFloat(textarea2.textContent))) + parseInt(1)) + parseInt(input1.value))
         textarea6.textContent = "daughter age is  (" + input4.value + "/" + input5.value + ") * farah age = " + (parseFloat(parseInt(input4.value) / parseInt(input5.value)) * (((parseInt(parseInt(input1.value) / parseFloat(textarea2.textContent))) + parseInt(1)) + parseInt(input1.value)))
-        //textarea7.textContent = "Daughter " + input6.value + " years ago = " + ((parseFloat(parseInt(input4.value) / parseInt(input5.value)) * (((parseInt(parseInt(input1.value) / parseFloat(textarea2.textContent))) + parseInt(1)) + parseInt(input1.value))) - parseInt(input6.value))
         que3ans2 = false;
         solutionpage.appendChild(textarea1);
         solutionpage.appendChild(textarea2);
@@ -407,9 +415,9 @@ function AgeQue3Ans2() {
         solutionpage.appendChild(textarea4);
         solutionpage.appendChild(textarea5);
         solutionpage.appendChild(textarea6);
-        //solutionpage.appendChild(textarea7);
     } else {
         let solutionpage = document.getElementById("solutionagesque3ans2");
+        button.textContent = "Show";
         que3ans2 = true
         a.removeChild(solutionpage)
         let again = document.createElement("div");
@@ -421,11 +429,11 @@ let que4ans1 = true;
 
 function AgeQue4Ans1() {
     let a = document.getElementById("agesque4ans1");
+    let button = document.getElementById("AGEQUE4ANS1");
     let input1 = document.getElementById("AGESQUE4ANSA1");
     let input2 = document.getElementById("AGESQUE4ANSN1");
     let input3 = document.getElementById("AGESQUE4ANSB1");
     let input4 = document.getElementById("AGESQUE4ANSB2");
-
     if (que4ans1 === true) {
         let solutionpage = document.getElementById("solutionagesque4ans1");
         let textarea1 = document.createElement("p");
@@ -433,19 +441,20 @@ function AgeQue4Ans1() {
         let textarea3 = document.createElement("p");
         let textarea4 = document.createElement("p");
         let textarea5 = document.createElement("p");
+        button.textContent = "Hide";
         textarea1.textContent = "1) convert equation =" + input4.value + "(" + input1.value + "* x +" + input2.value + " = " + input3.value + "(x + " + input2.value + ")";
         textarea2.textContent = "value of x = (" + input4.value + "*" + input2.value + " - " + input3.value + "*" + input2.value + ") / (" + input4.value + "*" + input1.value + " - " + input3.value + ")";
         textarea3.textContent = "x = " + ((parseInt(input4.value) * parseInt(input2.value)) - (parseInt(input3.value) * parseInt(input2.value)) / ((parseInt(input4.value) * parseInt(input1.value)) - parseInt(input3.value)))
         textarea4.textContent = ((parseInt(input4.value) * parseInt(input2.value)) - (parseInt(input3.value) * parseInt(input2.value)) / ((parseInt(input4.value) * parseInt(input1.value)) - parseInt(input3.value)))
-        textarea5.textContent = "prsent age Mr.Sanyal is = " + (parseInt(input1.value) * parseInt(textarea4.textContent))
+        textarea5.textContent = "present age Mr.Sanyal is = " + (parseInt(input1.value) * parseInt(textarea4.textContent))
         que4ans1 = false;
         solutionpage.appendChild(textarea1);
         solutionpage.appendChild(textarea2);
         solutionpage.appendChild(textarea3);
-        //solutionpage.appendChild(textarea4);
         solutionpage.appendChild(textarea5);
     } else {
         let solutionpage = document.getElementById("solutionagesque4ans1");
+        button.textContent = "Show";
         que4ans1 = true
         a.removeChild(solutionpage)
         let again = document.createElement("div");
@@ -457,11 +466,11 @@ let que4ans2 = true;
 
 function AgeQue4Ans2() {
     let a = document.getElementById("agesque4ans2");
+    let button = document.getElementById("AGEQUE4ANS2");
     let input1 = document.getElementById("AGESQUE4ANSA1");
     let input2 = document.getElementById("AGESQUE4ANSN1");
     let input3 = document.getElementById("AGESQUE4ANSB1");
     let input4 = document.getElementById("AGESQUE4ANSB2");
-
     if (que4ans2 === true) {
         let solutionpage = document.getElementById("solutionagesque4ans2");
         let textarea1 = document.createElement("p");
@@ -469,19 +478,20 @@ function AgeQue4Ans2() {
         let textarea3 = document.createElement("p");
         let textarea4 = document.createElement("p");
         let textarea5 = document.createElement("p");
+        button.textContent = "Hide";
         textarea1.textContent = "1) convert equation =" + input4.value + "(" + input1.value + "* x +" + input2.value + " = " + input3.value + "(x + " + input2.value + ")";
         textarea2.textContent = "value of x = (" + input4.value + "*" + input2.value + " - " + input3.value + "*" + input2.value + ") / (" + input4.value + "*" + input1.value + " - " + input3.value + ")";
         textarea3.textContent = "x = " + ((parseInt(input4.value) * parseInt(input2.value)) - (parseInt(input3.value) * parseInt(input2.value)) / ((parseInt(input4.value) * parseInt(input1.value)) - parseInt(input3.value)))
         textarea4.textContent = ((parseInt(input4.value) * parseInt(input2.value)) - (parseInt(input3.value) * parseInt(input2.value)) / ((parseInt(input4.value) * parseInt(input1.value)) - parseInt(input3.value)))
-        textarea5.textContent = "prsent age son is = " + (parseInt(textarea4.textContent))
+        textarea5.textContent = "present age son is = " + (parseInt(textarea4.textContent))
         que4ans2 = false;
         solutionpage.appendChild(textarea1);
         solutionpage.appendChild(textarea2);
         solutionpage.appendChild(textarea3);
-        //solutionpage.appendChild(textarea4);
         solutionpage.appendChild(textarea5);
     } else {
         let solutionpage = document.getElementById("solutionagesque4ans2");
+        button.textContent = "Show";
         que4ans2 = true
         a.removeChild(solutionpage)
         let again = document.createElement("div");
@@ -493,11 +503,11 @@ let que5ans1 = true;
 
 function AgeQue5Ans1() {
     let a = document.getElementById("agesque5ans1");
+    let button = document.getElementById("AGEQUE5ANS1");
     let input1 = document.getElementById("AGESQUE5ANSAVG");
     let input2 = document.getElementById("AGESQUE5ANSN");
     let input3 = document.getElementById("AGESQUE5ANSB1");
     let input4 = document.getElementById("AGESQUE5ANSB2");
-
     if (que5ans1 === true) {
         let solutionpage = document.getElementById("solutionagesque5ans1");
         let textarea1 = document.createElement("p");
@@ -506,6 +516,7 @@ function AgeQue5Ans1() {
         let textarea4 = document.createElement("p");
         let textarea5 = document.createElement("p");
         let textarea6 = document.createElement("p");
+        button.textContent = "Hide";
         textarea1.textContent = "1) total avg = " + input1.value + "* 2 (2 is no of persons)";
         textarea2.textContent = (parseInt(input1.value) * parseInt(2))
         textarea3.textContent = "covert the equation = " + input4.value + "(x + " + input2.value + ") = (" + input3.value + "(" + textarea2.textContent + " - x + " + input2.value + ")";
@@ -514,13 +525,13 @@ function AgeQue5Ans1() {
         textarea6.textContent = "Man present age = " + (((parseInt(input4.value) * parseInt(input2.value)) - ((parseInt(input3.value) * parseInt(textarea2.textContent)) + parseInt(input3.value) * parseInt(input2.value))) / (parseInt(input3.value) + parseInt(input4.value)))
         que5ans1 = false;
         solutionpage.appendChild(textarea1);
-        //solutionpage.appendChild(textarea2);
         solutionpage.appendChild(textarea3);
         solutionpage.appendChild(textarea4);
         solutionpage.appendChild(textarea5);
         solutionpage.appendChild(textarea6);
     } else {
         let solutionpage = document.getElementById("solutionagesque5ans1");
+        button.textContent = "Show";
         que5ans1 = true
         a.removeChild(solutionpage)
         let again = document.createElement("div");
@@ -532,11 +543,11 @@ let que5ans2 = true;
 
 function AgeQue5Ans2() {
     let a = document.getElementById("agesque5ans2");
+    let button = document.getElementById("AGEQUE5ANS2");
     let input1 = document.getElementById("AGESQUE5ANSAVG");
     let input2 = document.getElementById("AGESQUE5ANSN");
     let input3 = document.getElementById("AGESQUE5ANSB1");
     let input4 = document.getElementById("AGESQUE5ANSB2");
-
     if (que5ans2 === true) {
         let solutionpage = document.getElementById("solutionagesque5ans2");
         let textarea1 = document.createElement("p");
@@ -545,6 +556,7 @@ function AgeQue5Ans2() {
         let textarea4 = document.createElement("p");
         let textarea5 = document.createElement("p");
         let textarea6 = document.createElement("p");
+        button.textContent = "Hide";
         textarea1.textContent = "1) total avg = " + input1.value + "* 2 (2 is no of persons)";
         textarea2.textContent = (parseInt(input1.value) * parseInt(2))
         textarea3.textContent = "covert the equation = " + input4.value + "(x + " + input2.value + ") = (" + input3.value + "(" + textarea2.textContent + " - x + " + input2.value + ")";
@@ -553,13 +565,13 @@ function AgeQue5Ans2() {
         textarea6.textContent = "Daughter present age = (total avg - x) = " + ((((parseInt(input4.value) * parseInt(input2.value)) - ((parseInt(input3.value) * parseInt(textarea2.textContent)) + parseInt(input3.value) * parseInt(input2.value))) / (parseInt(input3.value) + parseInt(input4.value))) + parseInt(textarea2.textContent))
         que5ans2 = false;
         solutionpage.appendChild(textarea1);
-        //solutionpage.appendChild(textarea2);
         solutionpage.appendChild(textarea3);
         solutionpage.appendChild(textarea4);
         solutionpage.appendChild(textarea5);
         solutionpage.appendChild(textarea6);
     } else {
         let solutionpage = document.getElementById("solutionagesque5ans2");
+        button.textContent = "Show";
         que5ans2 = true
         a.removeChild(solutionpage)
         let again = document.createElement("div");
@@ -571,13 +583,12 @@ let que6ans1 = true;
 
 function AgeQue6Ans1() {
     let a = document.getElementById("agesque6ans1");
-    //let solutionpage = document.getElementById("solutionagesque1ans1");
+    let button = document.getElementById("AGEQUE6ANS1");
     let input1 = document.getElementById("AGESQUE6ANSRAM1");
     let input2 = document.getElementById("AGESQUE6ANSMOHAN2");
     let input3 = document.getElementById("AGESQUE6ANSRAM2");
     let input4 = document.getElementById("AGESQUE6ANSANIL2");
     let input5 = document.getElementById("AGESQUE6ANSSUM");
-
     if (que6ans1 === true) {
         let solutionpage = document.getElementById("solutionagesque6ans1");
         let textarea1 = document.createElement("p");
@@ -586,6 +597,7 @@ function AgeQue6Ans1() {
         let textarea4 = document.createElement("p");
         let textarea5 = document.createElement("p");
         let textarea6 = document.createElement("p");
+        button.textContent = "Hide";
         textarea1.textContent = ">> ram and mohan ratio  = 1 : " + input2.value + "/" + input1.value;
         textarea2.textContent = "ram and anil ratio = 1 : " + input4.value + "/" + input3.value;
         textarea3.textContent = "covert to equation is = 1 + " + input2.value + "/" + input1.value + " + " + input4.value + "/" + input3.value + " = " + input5.value;
@@ -598,9 +610,9 @@ function AgeQue6Ans1() {
         solutionpage.appendChild(textarea3);
         solutionpage.appendChild(textarea4);
         solutionpage.appendChild(textarea6);
-
     } else {
         let solutionpage = document.getElementById("solutionagesque6ans1");
+        button.textContent = "Show";
         que6ans1 = true
         a.removeChild(solutionpage)
         let again = document.createElement("div");
@@ -612,12 +624,12 @@ let que6ans2 = true;
 
 function AgeQue6Ans2() {
     let a = document.getElementById("agesque6ans2");
+    let button = document.getElementById("AGEQUE6ANS2");
     let input1 = document.getElementById("AGESQUE6ANSRAM1");
     let input2 = document.getElementById("AGESQUE6ANSMOHAN2");
     let input3 = document.getElementById("AGESQUE6ANSRAM2");
     let input4 = document.getElementById("AGESQUE6ANSANIL2");
     let input5 = document.getElementById("AGESQUE6ANSSUM");
-
     if (que6ans2 === true) {
         let solutionpage = document.getElementById("solutionagesque6ans2");
         let textarea1 = document.createElement("p");
@@ -626,6 +638,7 @@ function AgeQue6Ans2() {
         let textarea4 = document.createElement("p");
         let textarea5 = document.createElement("p");
         let textarea6 = document.createElement("p");
+        button.textContent = "Hide";
         textarea1.textContent = ">> ram and mohan ratio  = 1 : " + input2.value + "/" + input1.value;
         textarea2.textContent = "ram and anil ratio = 1 : " + input4.value + "/" + input3.value;
         textarea3.textContent = "covert to equation is = 1 + " + input2.value + "/" + input1.value + " + " + input4.value + "/" + input3.value + " = " + input5.value;
@@ -638,9 +651,9 @@ function AgeQue6Ans2() {
         solutionpage.appendChild(textarea3);
         solutionpage.appendChild(textarea4);
         solutionpage.appendChild(textarea6);
-
     } else {
         let solutionpage = document.getElementById("solutionagesque6ans2");
+        button.textContent = "Show";
         que6ans2 = true
         a.removeChild(solutionpage)
         let again = document.createElement("div");
@@ -652,12 +665,12 @@ let que6ans3 = true;
 
 function AgeQue6Ans3() {
     let a = document.getElementById("agesque6ans3");
+    let button = document.getElementById("AGEQUE6ANS3");
     let input1 = document.getElementById("AGESQUE6ANSRAM1");
     let input2 = document.getElementById("AGESQUE6ANSMOHAN2");
     let input3 = document.getElementById("AGESQUE6ANSRAM2");
     let input4 = document.getElementById("AGESQUE6ANSANIL2");
     let input5 = document.getElementById("AGESQUE6ANSSUM");
-
     if (que6ans3 === true) {
         let solutionpage = document.getElementById("solutionagesque6ans3");
         let textarea1 = document.createElement("p");
@@ -666,6 +679,7 @@ function AgeQue6Ans3() {
         let textarea4 = document.createElement("p");
         let textarea5 = document.createElement("p");
         let textarea6 = document.createElement("p");
+        button.textContent = "Hide";
         textarea1.textContent = ">> ram and mohan ratio  = 1 : " + input2.value + "/" + input1.value;
         textarea2.textContent = "ram and anil ratio = 1 : " + input4.value + "/" + input3.value;
         textarea3.textContent = "covert to equation is = 1 + " + input2.value + "/" + input1.value + " + " + input4.value + "/" + input3.value + " = " + input5.value;
@@ -678,9 +692,9 @@ function AgeQue6Ans3() {
         solutionpage.appendChild(textarea3);
         solutionpage.appendChild(textarea4);
         solutionpage.appendChild(textarea6);
-
     } else {
         let solutionpage = document.getElementById("solutionagesque6ans3");
+        button.textContent = "Show";
         que6ans3 = true
         a.removeChild(solutionpage)
         let again = document.createElement("div");
@@ -692,11 +706,11 @@ let que7ans1 = true;
 
 function AgeQue7Ans1() {
     let a = document.getElementById("agesque7ans1");
+    let button = document.getElementById("AGEQUE7ANS1");
     let input1 = document.getElementById("AGESQUE7ANSDIFF");
     let input2 = document.getElementById("AGESQUE7ANSN");
     let input3 = document.getElementById("AGESQUE7ANSB1");
     let input4 = document.getElementById("AGESQUE7ANSB2");
-
     if (que7ans1 === true) {
         let solutionpage = document.getElementById("solutionagesque7ans1");
         let textarea1 = document.createElement("p");
@@ -704,6 +718,7 @@ function AgeQue7Ans1() {
         let textarea3 = document.createElement("p");
         let textarea4 = document.createElement("p");
         let textarea5 = document.createElement("p");
+        button.textContent = "Hide";
         textarea1.textContent = "convert into the equation = (" + input4.value + "* x + " + input2.value + " ) - (" + input3.value + "* x + " + input2.value + " = " + input1.value
         textarea2.textContent = "value of x = (" + input1.value + ")/(" + input4.value + " - " + input3.value + ")";
         textarea3.textContent = (parseInt(input1.value) / (parseInt(input4.value) - parseInt(input3.value)))
@@ -712,11 +727,11 @@ function AgeQue7Ans1() {
         que7ans1 = false;
         solutionpage.appendChild(textarea1);
         solutionpage.appendChild(textarea2);
-        //solutionpage.appendChild(textarea3);
         solutionpage.appendChild(textarea4);
         solutionpage.appendChild(textarea5);
     } else {
         let solutionpage = document.getElementById("solutionagesque7ans1");
+        button.textContent = "Show";
         que7ans1 = true
         a.removeChild(solutionpage)
         let again = document.createElement("div");
@@ -728,11 +743,11 @@ let que7ans2 = true;
 
 function AgeQue7Ans2() {
     let a = document.getElementById("agesque7ans2");
+    let button = document.getElementById("AGEQUE7ANS2");
     let input1 = document.getElementById("AGESQUE7ANSDIFF");
     let input2 = document.getElementById("AGESQUE7ANSN");
     let input3 = document.getElementById("AGESQUE7ANSB1");
     let input4 = document.getElementById("AGESQUE7ANSB2");
-
     if (que7ans2 === true) {
         let solutionpage = document.getElementById("solutionagesque7ans2");
         let textarea1 = document.createElement("p");
@@ -740,6 +755,7 @@ function AgeQue7Ans2() {
         let textarea3 = document.createElement("p");
         let textarea4 = document.createElement("p");
         let textarea5 = document.createElement("p");
+        button.textContent = "Hide";
         textarea1.textContent = "convert into the equation = (" + input4.value + "* x + " + input2.value + " ) - (" + input3.value + "* x + " + input2.value + " = " + input1.value
         textarea2.textContent = "value of x = (" + input1.value + ")/(" + input4.value + " - " + input3.value + ")";
         textarea3.textContent = (parseInt(input1.value) / (parseInt(input4.value) - parseInt(input3.value)))
@@ -753,6 +769,7 @@ function AgeQue7Ans2() {
         solutionpage.appendChild(textarea5);
     } else {
         let solutionpage = document.getElementById("solutionagesque7ans2");
+        button.textContent = "Show";
         que7ans2 = true
         a.removeChild(solutionpage)
         let again = document.createElement("div");
@@ -764,7 +781,7 @@ let que8ans1 = true;
 
 function AgeQue8Ans1() {
     let a = document.getElementById("agesque8ans1");
-    //let solutionpage = document.getElementById("solutionagesque1ans1");
+    let button = document.getElementById("AGEQUE8ANS1");
     let input1 = document.getElementById("AGESQUE8ANSSUM");
     let input2 = document.getElementById("AGESQUE8ANSN");
     let input3 = document.getElementById("AGESQUE8ANSMOTHER");
@@ -777,6 +794,7 @@ function AgeQue8Ans1() {
         let textarea4 = document.createElement("p");
         let textarea5 = document.createElement("p");
         let textarea6 = document.createElement("p");
+        button.textContent = "Hide";
         textarea1.textContent = ">> convert equation = " + input1.value + " - x +" + input2.value + " = " + input3.value + "( x + " + input2.value + ")";
         textarea2.textContent = "value of x = " + input1.value + " - (" + input3.value + " * " + input2.value + ")/(" + input3.value + " + " + input4.value + ")"
         textarea3.textContent = "x  =  " + ((parseInt(input1.value) - (parseInt(input3.value) * input2.value)) / (parseInt(input3.value) + parseInt(input4.value)))
@@ -789,9 +807,9 @@ function AgeQue8Ans1() {
         solutionpage.appendChild(textarea3);
         solutionpage.appendChild(textarea5);
         solutionpage.appendChild(textarea6);
-
     } else {
         let solutionpage = document.getElementById("solutionagesque8ans1");
+        button.textContent = "Show";
         que8ans1 = true
         a.removeChild(solutionpage)
         let again = document.createElement("div");
@@ -803,6 +821,7 @@ let que8ans2 = true;
 
 function AgeQue8Ans2() {
     let a = document.getElementById("agesque8ans2");
+    let button = document.getElementById("AGEQUE8ANS2");
     let input1 = document.getElementById("AGESQUE8ANSSUM");
     let input2 = document.getElementById("AGESQUE8ANSN");
     let input3 = document.getElementById("AGESQUE8ANSMOTHER");
@@ -815,6 +834,7 @@ function AgeQue8Ans2() {
         let textarea4 = document.createElement("p");
         let textarea5 = document.createElement("p");
         let textarea6 = document.createElement("p");
+        button.textContent = "Hide";
         textarea1.textContent = ">> convert equation = " + input1.value + " - x +" + input2.value + " = " + input3.value + "( x + " + input2.value + ")";
         textarea2.textContent = "value of x = " + input1.value + " - (" + input3.value + " * " + input2.value + ")/(" + input3.value + " + " + input4.value + ")"
         textarea3.textContent = "x  =  " + ((parseInt(input1.value) - (parseInt(input3.value) * input2.value)) / (parseInt(input3.value) + parseInt(input4.value)))
@@ -827,10 +847,10 @@ function AgeQue8Ans2() {
         solutionpage.appendChild(textarea3);
         solutionpage.appendChild(textarea5);
         solutionpage.appendChild(textarea6);
-
     } else {
         let solutionpage = document.getElementById("solutionagesque8ans2");
-        que1ans2 = true
+        button.textContent = "Show";
+        que8ans2 = true
         a.removeChild(solutionpage)
         let again = document.createElement("div");
         again.id = "solutionagesque8ans2";
@@ -841,6 +861,7 @@ let que8ans3 = true;
 
 function AgeQue8Ans3() {
     let a = document.getElementById("agesque8ans3");
+    let button = document.getElementById("AGEQUE8ANS3");
     let input1 = document.getElementById("AGESQUE8ANSSUM");
     let input2 = document.getElementById("AGESQUE8ANSN");
     let input3 = document.getElementById("AGESQUE8ANSMOTHER");
@@ -853,6 +874,7 @@ function AgeQue8Ans3() {
         let textarea4 = document.createElement("p");
         let textarea5 = document.createElement("p");
         let textarea6 = document.createElement("p");
+        button.textContent = "Hide";
         textarea1.textContent = ">> convert equation = " + input1.value + " - x +" + input2.value + " = " + input3.value + "( x + " + input2.value + ")";
         textarea2.textContent = "value of x = " + input1.value + " - (" + input3.value + " * " + input2.value + ")/(" + input3.value + " + " + input4.value + ")"
         textarea3.textContent = "x  =  " + ((parseInt(input1.value) - (parseInt(input3.value) * input2.value)) / (parseInt(input3.value) + parseInt(input4.value)))
@@ -865,9 +887,9 @@ function AgeQue8Ans3() {
         solutionpage.appendChild(textarea3);
         solutionpage.appendChild(textarea5);
         solutionpage.appendChild(textarea6);
-
     } else {
         let solutionpage = document.getElementById("solutionagesque8ans3");
+        button.textContent = "Show";
         que8ans3 = true
         a.removeChild(solutionpage)
         let again = document.createElement("div");
@@ -895,7 +917,7 @@ function AgeQue9Ans1() {
         button.textContent = "Hide";
         textarea1.textContent = "Prasad and Amar diff = (" + input2.value + "* x ) - (" + input3.value + "* x ) = " + input4.value;
         textarea2.textContent = "value of x = " + input4.value + "/(" + input2.value + " - " + input3.value + ")";
-        textarea3.textContent = "x  =  " + (parseInt(input4.value) / (parseInt(input2.value) - parseInt(input3.value)))
+        textarea3.textContent = "x  =  " + Math.round(parseInt(input4.value) / (parseInt(input2.value) - parseInt(input3.value)))
         textarea4.textContent = (parseInt(input4.value) / (parseInt(input2.value) - parseInt(input3.value)))
         textarea5.textContent = "Difference Subhash and prasad = (" + input1.value + "* x ) - (" + input2.value + "* x )";
         textarea6.textContent = "Difference Subhash and prasad = " + Math.abs((parseInt(input1.value) * parseInt(textarea4.textContent)) - (parseInt(input2.value) * parseInt(textarea4.textContent)))
@@ -905,7 +927,6 @@ function AgeQue9Ans1() {
         solutionpage.appendChild(textarea3);
         solutionpage.appendChild(textarea5);
         solutionpage.appendChild(textarea6);
-
     } else {
         let solutionpage = document.getElementById("solutionagesque9ans1");
         button.textContent = "Show";
@@ -936,7 +957,7 @@ function AgeQue9Ans2() {
         button.textContent = "Hide";
         textarea1.textContent = "Prasad and Amar diff = (" + input2.value + "* x ) - (" + input3.value + "* x ) = " + input4.value;
         textarea2.textContent = "value of x = " + input4.value + "/(" + input2.value + " - " + input3.value + ")";
-        textarea3.textContent = "x  =  " + (parseInt(input4.value) / (parseInt(input2.value) - parseInt(input3.value)))
+        textarea3.textContent = "x  =  " + Math.round(parseInt(input4.value) / (parseInt(input2.value) - parseInt(input3.value)))
         textarea4.textContent = (parseInt(input4.value) / (parseInt(input2.value) - parseInt(input3.value)))
         textarea5.textContent = "Difference Subhash and Amar = (" + input1.value + "* x ) - (" + input3.value + "* x )"
         textarea6.textContent = "Difference Subhash and Amar = " + Math.abs((parseInt(input1.value) * parseInt(textarea4.textContent)) - (parseInt(input3.value) * parseInt(textarea4.textContent)))
@@ -946,7 +967,6 @@ function AgeQue9Ans2() {
         solutionpage.appendChild(textarea3);
         solutionpage.appendChild(textarea5);
         solutionpage.appendChild(textarea6);
-
     } else {
         let solutionpage = document.getElementById("solutionagesque9ans2");
         button.textContent = "Show";
@@ -991,7 +1011,6 @@ function AgeQue10Ans1() {
         solutionpage.appendChild(textarea4);
         solutionpage.appendChild(textarea5);
         solutionpage.appendChild(textarea6);
-
     } else {
         let solutionpage = document.getElementById("solutionagesque10ans1");
         button.textContent = "Show";
@@ -1036,10 +1055,8 @@ function AgeQue11Ans1() {
         que11ans1 = false
         solutionpage.appendChild(textarea1);
         solutionpage.appendChild(textarea2);
-        //solutionpage.appendChild(textarea4);
         solutionpage.appendChild(textarea5);
         solutionpage.appendChild(textarea6);
-
     } else {
         let solutionpage = document.getElementById("solutionagesque11ans1");
         button.textContent = "Show";
@@ -1084,10 +1101,8 @@ function AgeQue11Ans2() {
         que11ans2 = false
         solutionpage.appendChild(textarea1);
         solutionpage.appendChild(textarea2);
-        //solutionpage.appendChild(textarea3);
         solutionpage.appendChild(textarea5);
         solutionpage.appendChild(textarea6);
-
     } else {
         let solutionpage = document.getElementById("solutionagesque11ans2");
         button.textContent = "Show";
@@ -1129,7 +1144,6 @@ function AgeQue12Ans1() {
         solutionpage.appendChild(textarea3);
         solutionpage.appendChild(textarea5);
         solutionpage.appendChild(textarea6);
-
     } else {
         let solutionpage = document.getElementById("solutionagesque12ans1");
         button.textContent = "Show";
@@ -1171,7 +1185,6 @@ function AgeQue12Ans2() {
         solutionpage.appendChild(textarea3);
         solutionpage.appendChild(textarea5);
         solutionpage.appendChild(textarea6);
-
     } else {
         let solutionpage = document.getElementById("solutionagesque12ans2");
         button.textContent = "Show";
@@ -1213,7 +1226,6 @@ function AgeQue12Ans3() {
         solutionpage.appendChild(textarea3);
         solutionpage.appendChild(textarea5);
         solutionpage.appendChild(textarea6);
-
     } else {
         let solutionpage = document.getElementById("solutionagesque12ans3");
         button.textContent = "Show";
@@ -1233,7 +1245,6 @@ function AgeQue13Ans1() {
     let input2 = document.getElementById("AGESQUE13ANSN");
     let input3 = document.getElementById("AGESQUE13ANSPRODUCT");
     let input4 = document.getElementById("AGESQUE13ANSMAN");
-
     if (que13ans1 === true) {
         let solutionpage = document.getElementById("solutionagesque13ans1");
         let textarea1 = document.createElement("p");
@@ -1243,7 +1254,6 @@ function AgeQue13Ans1() {
         let textarea5 = document.createElement("p");
         let textarea6 = document.createElement("p");
         let textarea7 = document.createElement("p");
-        //let textarea7 = document.createElement("p");
         button.textContent = "Hide";
         textarea1.textContent = "product is = ( x - " + input2.value + ") (" + input1.value + " -  x  - " + input2.value + ") = " + input3.value;
         textarea2.textContent = "From into hte Quaradic equation = " + (parseInt(input4.value) * parseInt(input4.value)) + "x^2 - " + (parseInt(input4.value) * parseInt(input1.value)) + " X - (" + (parseInt(input2.value) * parseInt(input1.value)) + " - " + (parseInt(input2.value) * parseInt(2)) + " - " + (parseInt(input3.value));
@@ -1286,7 +1296,6 @@ function AgeQue13Ans2() {
     let input2 = document.getElementById("AGESQUE13ANSN");
     let input3 = document.getElementById("AGESQUE13ANSPRODUCT");
     let input4 = document.getElementById("AGESQUE13ANSMAN");
-
     if (que13ans2 === true) {
         let solutionpage = document.getElementById("solutionagesque13ans2");
         let textarea1 = document.createElement("p");
@@ -1296,7 +1305,6 @@ function AgeQue13Ans2() {
         let textarea5 = document.createElement("p");
         let textarea6 = document.createElement("p");
         let textarea7 = document.createElement("p");
-        //let textarea7 = document.createElement("p");
         button.textContent = "Hide";
         textarea1.textContent = "product is = ( x - " + input2.value + ") (" + input1.value + " -  x  - " + input2.value + ") = " + input3.value;
         textarea2.textContent = "From into hte Quaradic equation = " + (parseInt(input4.value) * parseInt(input4.value)) + "x^2 - " + (parseInt(input4.value) * parseInt(input1.value)) + " X - (" + (parseInt(input2.value) * parseInt(input1.value)) + " - " + (parseInt(input2.value) * parseInt(2)) + " - " + (parseInt(input3.value));
@@ -1312,15 +1320,11 @@ function AgeQue13Ans2() {
             textarea6.textContent = Math.abs(Math.round(textarea5.textContent));
         }
         textarea7.textContent = " son age = " + (textarea6.textContent);
-        //textarea7.textContent = "Daughter " + input6.value + " years ago = " + ((parseFloat(parseInt(input4.value) / parseInt(input5.value)) * (((parseInt(parseInt(input1.value) / parseFloat(textarea2.textContent))) + parseInt(1)) + parseInt(input1.value))) - parseInt(input6.value))
         que13ans2 = false;
         solutionpage.appendChild(textarea1);
         solutionpage.appendChild(textarea2);
         solutionpage.appendChild(textarea3);
-        //solutionpage.appendChild(textarea4);
-        //solutionpage.appendChild(textarea5);
         solutionpage.appendChild(textarea7);
-        //solutionpage.appendChild(textarea7);
     } else {
         let solutionpage = document.getElementById("solutionagesque13ans2");
         button.textContent = "Show";
@@ -1340,7 +1344,6 @@ function AgeQue14Ans1() {
     let input2 = document.getElementById("AGESQUE14ANSSON");
     let input3 = document.getElementById("AGESQUE14ANSPRODUCT");
     let input4 = document.getElementById("AGESQUE14ANSN");
-
     if (que14ans1 === true) {
         let solutionpage = document.getElementById("solutionagesque14ans1");
         let textarea1 = document.createElement("p");
@@ -1350,7 +1353,6 @@ function AgeQue14Ans1() {
         let textarea5 = document.createElement("p");
         let textarea6 = document.createElement("p");
         let textarea7 = document.createElement("p");
-        //let textarea7 = document.createElement("p");
         button.textContent = "Hide";
         textarea1.textContent = "product is = ( x * " + input1.value + ") * ( x  * " + input2.value + ") = " + input3.value;
         textarea2.textContent = "Value of x = " + input3.value + "/ (" + input1.value + " * " + input2.value + ")";
@@ -1363,7 +1365,6 @@ function AgeQue14Ans1() {
         solutionpage.appendChild(textarea1);
         solutionpage.appendChild(textarea2);
         solutionpage.appendChild(textarea3);
-        //solutionpage.appendChild(textarea4);
         solutionpage.appendChild(textarea5);
         solutionpage.appendChild(textarea6);
         solutionpage.appendChild(textarea7);
@@ -1386,7 +1387,6 @@ function AgeQue15Ans1() {
     let input2 = document.getElementById("AGESQUE15ANSNITYA");
     let input3 = document.getElementById("AGESQUE15ANSSONAL1");
     let input4 = document.getElementById("AGESQUE15ANSNITYA1");
-
     if (que15ans1 === true) {
         let solutionpage = document.getElementById("solutionagesque15ans1");
         let textarea1 = document.createElement("p");
@@ -1404,7 +1404,6 @@ function AgeQue15Ans1() {
         solutionpage.appendChild(textarea1);
         solutionpage.appendChild(textarea2);
         solutionpage.appendChild(textarea3);
-        //solutionpage.appendChild(textarea4);
         solutionpage.appendChild(textarea5);
     } else {
         let solutionpage = document.getElementById("solutionagesque15ans1");
@@ -1447,7 +1446,6 @@ function AgeQue16Ans1() {
         solutionpage.appendChild(textarea3);
         solutionpage.appendChild(textarea5);
         solutionpage.appendChild(textarea6);
-
     } else {
         let solutionpage = document.getElementById("solutionagesque16ans1");
         button.textContent = "Show";
@@ -1482,14 +1480,13 @@ function AgeQue16Ans2() {
         textarea3.textContent = "x  =  " + (((parseInt(input5.value) * parseInt(input1.value)) + (parseInt(input5.value) * parseInt(input3.value)) - (parseInt(input4.value) * parseInt(input3.value)) - (parseInt(input4.value) * parseInt(input1.value))) / ((parseInt(input4.value) * parseInt(input2.value)) - parseInt(input5.value)))
         textarea4.textContent = (((parseInt(input5.value) * parseInt(input1.value)) + (parseInt(input5.value) * parseInt(input3.value)) - (parseInt(input4.value) * parseInt(input3.value)) - (parseInt(input4.value) * parseInt(input1.value))) / ((parseInt(input4.value) * parseInt(input2.value)) - parseInt(input5.value)))
         textarea5.textContent = "present Man  age= " + input2.value + " * " + textarea4.textContent + " + " + input1.value;
-        textarea6.textContent = "present Jayant age = " + ((parseInt(input2.value) * parseInt(textarea4.textContent)) + parseInt(input1.value));
+        textarea6.textContent = "present man age = " + ((parseInt(input2.value) * parseInt(textarea4.textContent)) + parseInt(input1.value));
         que16ans2 = false
         solutionpage.appendChild(textarea1);
         solutionpage.appendChild(textarea2);
         solutionpage.appendChild(textarea3);
         solutionpage.appendChild(textarea5);
         solutionpage.appendChild(textarea6);
-
     } else {
         let solutionpage = document.getElementById("solutionagesque16ans2");
         button.textContent = "Show";
@@ -1504,12 +1501,10 @@ let que17ans1 = true;
 
 function AgeQue17Ans1() {
     let a = document.getElementById("agesque17ans1");
-    //let solutionpage = document.getElementById("solutionagesque1ans1");
     let input1 = document.getElementById("AGESQUE17ANSNOWMOTHER");
     let input2 = document.getElementById("AGESQUE17ANSN");
     let input3 = document.getElementById("AGESQUE17ANSAFTERMOTHER");
     let button = document.getElementById("AGEQUE17ANS1");
-
     if (que17ans1 === true) {
         let solutionpage = document.getElementById("solutionagesque17ans1");
         let textarea1 = document.createElement("p");
@@ -1531,7 +1526,6 @@ function AgeQue17Ans1() {
         solutionpage.appendChild(textarea3);
         solutionpage.appendChild(textarea4);
         solutionpage.appendChild(textarea6);
-
     } else {
         let solutionpage = document.getElementById("solutionagesque17ans1");
         button.textContent = "Show"
@@ -1546,12 +1540,10 @@ let que17ans2 = true;
 
 function AgeQue17Ans2() {
     let a = document.getElementById("agesque17ans2");
-    //let solutionpage = document.getElementById("solutionagesque1ans1");
     let input1 = document.getElementById("AGESQUE17ANSNOWMOTHER");
     let input2 = document.getElementById("AGESQUE17ANSN");
     let input3 = document.getElementById("AGESQUE17ANSAFTERMOTHER");
     let button = document.getElementById("AGEQUE17ANS2");
-
     if (que17ans2 === true) {
         let solutionpage = document.getElementById("solutionagesque17ans2");
         let textarea1 = document.createElement("p");
@@ -1566,14 +1558,13 @@ function AgeQue17Ans2() {
         textarea3.textContent = "x value =  (b1* n1 - n1)/(a1 - b1)";
         textarea4.textContent = "x = " + (((parseInt(input3.value) * (parseInt(input2.value))) - (parseInt(input2.value))) / ((parseInt(input1.value)) - parseInt(input3.value)))
         textarea5.textContent = (((parseInt(input3.value) * (parseInt(input2.value))) - (parseInt(input2.value))) / ((parseInt(input1.value)) - parseInt(input3.value)))
-        textarea6.textContent = "present age of mother = " + (parseInt(textarea5.textContent) * parseInt(input1.value))
+        textarea6.textContent = "present age of mother = " + (parseInt(textarea5.textContent) + " * " + parseInt(input1.value)) + " = " + (parseInt(textarea5.textContent) * parseInt(input1.value))
         que17ans2 = false
         solutionpage.appendChild(textarea1);
         solutionpage.appendChild(textarea2);
         solutionpage.appendChild(textarea3);
         solutionpage.appendChild(textarea4);
         solutionpage.appendChild(textarea6);
-
     } else {
         let solutionpage = document.getElementById("solutionagesque17ans2");
         button.textContent = "Show"
@@ -1588,13 +1579,11 @@ let que18ans1 = true;
 
 function AgeQue18Ans1() {
     let a = document.getElementById("agesque18ans1");
-    //let solutionpage = document.getElementById("solutionagesque1ans1");
     let input1 = document.getElementById("AGESQUE18ANSN");
     let input2 = document.getElementById("AGESQUE18ANSFATHER");
     let input3 = document.getElementById("AGESQUE18ANSHENCE");
     let input4 = document.getElementById("AGESQUE18ANSSON");
     let button = document.getElementById("AGEQUE18ANS1");
-
     if (que18ans1 === true) {
         let solutionpage = document.getElementById("solutionagesque18ans1");
         let textarea1 = document.createElement("p");
@@ -1616,7 +1605,6 @@ function AgeQue18Ans1() {
         solutionpage.appendChild(textarea3);
         solutionpage.appendChild(textarea4);
         solutionpage.appendChild(textarea6);
-
     } else {
         let solutionpage = document.getElementById("solutionagesque18ans1");
         button.textContent = "Show"
@@ -1631,11 +1619,9 @@ let avgque1ans1 = true;
 
 function AvgQue1Ans1() {
     let a = document.getElementById("avgque1ans1");
-    //let solutionpage = document.getElementById("solutionagesque1ans1");
     let input1 = document.getElementById("AVGESQUE1ANSSTUDENTS");
     let input2 = document.getElementById("AVGESQUE1ANSVALUE");
     let button = document.getElementById("AVGQUE1ANS1");
-
     if (avgque1ans1 === true) {
         let solutionpage = document.getElementById("solutionavgque1ans1");
         let textarea1 = document.createElement("p");
@@ -1656,7 +1642,6 @@ function AvgQue1Ans1() {
         solutionpage.appendChild(textarea1);
         solutionpage.appendChild(textarea2);
         solutionpage.appendChild(textarea3);
-
     } else {
         let solutionpage = document.getElementById("solutionavgque1ans1");
         button.textContent = "Show"
@@ -1671,11 +1656,9 @@ let avgque2ans1 = true;
 
 function AvgQue2Ans1() {
     let a = document.getElementById("avgque2ans1");
-    //let solutionpage = document.getElementById("solutionagesque1ans1");
     let input1 = document.getElementById("AVGESQUE2ANSNUMBERS");
     let input2 = document.getElementById("AVGESQUE2ANSMEAN");
     let button = document.getElementById("AVGQUE2ANS1");
-
     if (avgque2ans1 === true) {
         let solutionpage = document.getElementById("solutionavgque2ans1");
         let textarea1 = document.createElement("p");
@@ -1689,7 +1672,6 @@ function AvgQue2Ans1() {
         solutionpage.appendChild(textarea1);
         solutionpage.appendChild(textarea2);
         solutionpage.appendChild(textarea3);
-
     } else {
         let solutionpage = document.getElementById("solutionavgque2ans1");
         button.textContent = "Show"
@@ -1704,11 +1686,9 @@ let avgque3ans1 = true;
 
 function AvgQue3Ans1() {
     let a = document.getElementById("avgque3ans1");
-    //let solutionpage = document.getElementById("solutionagesque1ans1");
     let input1 = document.getElementById("AVGESQUE1ANSPEOPLE");
     let input2 = document.getElementById("AVGESQUE1ANSINCOME");
     let button = document.getElementById("AVGQUE3ANS1");
-
     if (avgque3ans1 === true) {
         let solutionpage = document.getElementById("solutionavgque3ans1");
         let textarea1 = document.createElement("p");
@@ -1744,7 +1724,6 @@ function AvgQue3Ans1() {
         solutionpage.appendChild(textarea3);
         solutionpage.appendChild(textarea4);
         solutionpage.appendChild(textarea5);
-
     } else {
         let solutionpage = document.getElementById("solutionavgque3ans1");
         button.textContent = "Show"
@@ -1759,11 +1738,9 @@ let avgque4ans1 = true;
 
 function AvgQue4Ans1() {
     let a = document.getElementById("avgque4ans1");
-    //let solutionpage = document.getElementById("solutionagesque1ans1");
     let input1 = document.getElementById("AVGESQUE2ANSSHOP1");
     let input2 = document.getElementById("AVGESQUE2ANSSHOP2");
     let button = document.getElementById("AVGQUE4ANS1");
-
     if (avgque4ans1 === true) {
         let solutionpage = document.getElementById("solutionavgque4ans1");
         let textarea1 = document.createElement("p");
@@ -1771,8 +1748,8 @@ function AvgQue4Ans1() {
         let textarea3 = document.createElement("p");
         let textarea4 = document.createElement("p");
         button.textContent = "Hide"
-        let str_1 = (input1.value).split(",");
-        let str_2 = (input2.value).split(",");
+        let str_1 = (input1.value).split(" ");
+        let str_2 = (input2.value).split(" ");
         let no_of_books = parseInt(str_1[0]) + parseInt(str_2[0])
         let total_cost = parseInt(str_1[1]) + parseInt(str_2[1])
         textarea1.textContent = ">>  No of books = " + str_1[0] + "+ " + str_2[0] + " = " + no_of_books;
@@ -1784,7 +1761,6 @@ function AvgQue4Ans1() {
         solutionpage.appendChild(textarea2);
         solutionpage.appendChild(textarea3);
         solutionpage.appendChild(textarea4);
-
     } else {
         let solutionpage = document.getElementById("solutionavgque4ans1");
         button.textContent = "Show"
@@ -1799,7 +1775,6 @@ let avgque5ans1 = true;
 
 function AvgQue5Ans1() {
     let a = document.getElementById("avgque5ans1");
-    //let solutionpage = document.getElementById("solutionagesque1ans1");
     let input1 = document.getElementById("AVGESQUE5ANSBOXES");
     let input2 = document.getElementById("AVGESQUE5ANSFRIST");
     let input3 = document.getElementById("AVGESQUE5ANSSECOND");
@@ -1832,7 +1807,6 @@ function AvgQue5Ans1() {
         solutionpage.appendChild(textarea4);
         solutionpage.appendChild(textarea5);
         solutionpage.appendChild(textarea6);
-
     } else {
         let solutionpage = document.getElementById("solutionavgque5ans1");
         button.textContent = "Show"
@@ -1850,7 +1824,6 @@ function AvgQue6Ans1() {
     let input1 = document.getElementById("AVGESQUE6ANSEVENODD");
     let input2 = document.getElementById("AVGESQUE6ANSNATURAL");
     let button = document.getElementById("AVGQUE6ANS1");
-
     if (avgque6ans1 === true) {
         let solutionpage = document.getElementById("solutionavgque6ans1");
         let textarea1 = document.createElement("p");
@@ -1870,7 +1843,6 @@ function AvgQue6Ans1() {
         solutionpage.appendChild(textarea1);
         solutionpage.appendChild(textarea2);
         solutionpage.appendChild(textarea3);
-
     } else {
         let solutionpage = document.getElementById("solutionavgque6ans1");
         button.textContent = "Show"
@@ -1885,11 +1857,9 @@ let avgque7ans1 = true;
 
 function AvgQue7Ans1() {
     let a = document.getElementById("avgque7ans1");
-    //let solutionpage = document.getElementById("solutionagesque1ans1");
     let input1 = document.getElementById("AVGESQUE7ANSMEAN");
     let input2 = document.getElementById("AVGESQUE7ANSVALUE");
     let button = document.getElementById("AVGQUE7ANS1");
-
     if (avgque7ans1 === true) {
         let solutionpage = document.getElementById("solutionavgque7ans1");
         let textarea1 = document.createElement("p");
@@ -1901,15 +1871,14 @@ function AvgQue7Ans1() {
         let total_avg = 0;
         for (let i = 0; i < arr.length; i++) {
             total_avg += parseInt((arr[i]));
-        };
+        }
         textarea1.textContent = ">>  Average = (no of elments)/(total no of elments) ";
-        textarea2.textContent = "Value of x = (" + total_avg + ")-(" + mean + " * "+(arr.length)+"1" +")"
-        textarea3.textContent = "x" = " + (total_avg - (parseInt(input1.value)*(parseInt(arr.length)+parseInt(1))))
+        textarea2.textContent = "Value of x = (" + total_avg + ")-(" + input1.value + " * " + (arr.length) + "1" + ")"
+        textarea3.textContent = "x = " + Math.abs(total_avg - (parseInt(input1.value) * (parseInt(arr.length) + parseInt(1))))
         avgque7ans1 = false
         solutionpage.appendChild(textarea1);
         solutionpage.appendChild(textarea2);
         solutionpage.appendChild(textarea3);
-
     } else {
         let solutionpage = document.getElementById("solutionavgque7ans1");
         button.textContent = "Show"
@@ -2296,6 +2265,7 @@ function RacesQue2Ans1() {
     }
 }
 let racesque3ans1 = true;
+
 function RacesQue3Ans1() {
     let a = document.getElementById("racesque3ans1");
     let input1 = document.getElementById("RACESQUE3ANSAB");
@@ -2311,7 +2281,7 @@ function RacesQue3Ans1() {
         textarea1.textContent = "A : B : C = " + 1000 + " : (" + 1000 + " - " + input1.value + ") : (" + 1000 + " - " + input2.value + ")";
         textarea2.textContent = "A : B : C = " + 1000 + " : " + (parseInt(1000) - parseInt(input1.value)) - (parseInt(1000) - parseInt(input2.value));
         textarea3.textContent = "In a " + (parseInt(1000) - parseInt(input1.value)) + "m B can give c = " + (parseInt(1000) - parseInt(input1.value)) + " - " + (parseInt(1000) - parseInt(input2.value)) + " = " + Math.abs((parseInt(1000) - parseInt(input1.value)) - (parseInt(1000) - parseInt(input2.value)));
-        textarea4.textContent = " In a 1000m race  B and C start = ((" + Math.abs((parseInt(1000) - parseInt(input1.value)) - (parseInt(1000) - parseInt(input2.value))) + "/" + (parseInt(1000) - parseInt(input1.value)) + ")*" + 1000 + ") = " + (((parseInt(1000) - parseInt(input1.value)) - (parseInt(1000) - parseInt(input2.value))) / (parseInt(1000) - parseInt(input1.value))) * parseInt(1000)
+        textarea4.textContent = " In a 1000m race  B and C start = ((" + Math.abs((parseInt(1000) - parseInt(input1.value)) - (parseInt(1000) - parseInt(input2.value))) + "/" + (parseInt(1000) - parseInt(input1.value)) + ")*" + 1000 + ") = " + (((parseInt(1000) - parseInt(input1.value)) - (parseInt(1000) - parseInt(input2.value))) / (parseInt(1000) - parseInt(input1.value))) * parseInt(1000)+ " m";
         racesque3ans1 = false
         solutionpage.appendChild(textarea1);
         solutionpage.appendChild(textarea2);
@@ -2411,11 +2381,11 @@ function RacesQue6Ans1() {
         let textarea3 = document.createElement("p");
         let textarea4 = document.createElement("p");
         button.textContent = "Hide"
+        racesque6ans1 = false;
         textarea1.textContent = "A's speed = " + input3.value + " km/hr = " + input3.value + " *  5/18  = " + (parseInt(input3.value) * ((parseInt(5)) / parseInt(18))) + " m/sec";
-        textarea2.textContent = "A Time takes cover " + input1.value + " m = " + input1.value + " * " + (parseInt(input3.value) * ((parseInt(5)) / parseInt(18))) + " = " + parseInt(input1.value) * (parseInt(input3.value) * ((parseInt(5)) / parseInt(18))) + " sec";
-        textarea3.textContent = "A Time takes cover " + input1.value + " m = " + (parseInt(input1.value) * (parseInt(input3.value) * ((parseInt(5)) / parseInt(18)))) + " + " + input2.value + " = " + ((parseInt(input1.value) * (parseInt(input3.value) * ((parseInt(5)) / parseInt(18)))) + (parseInt(input2.value))) + " sec";
-        textarea4.textContent = "B speed = " + input1.value + "/" + ((parseInt(input1.value) * (parseInt(input3.value) * ((parseInt(5) / parseInt(18)))) + parseInt(input2.value))) + "m/sec = " + (parseInt(input1.value) / ((parseInt(input1.value) * (parseInt(input3.value) * ((parseInt(5)) / parseInt(18)))) + parseInt(input2.value))) * (parseInt(18) / parseInt(5));
-        racesque6ans1 = false
+        textarea2.textContent = "A Time takes cover " + input1.value + " m = " + input1.value + " * 1/" + (parseInt(input3.value) * ((parseInt(5)) / parseInt(18))) + " = " + (parseInt(input1.value) * (parseFloat(parseInt(1) / (parseInt(input3.value) * ((parseInt(5)) / parseInt(18)))))) + " sec";
+        textarea3.textContent = "B Time takes cover " + input1.value + " m = " + (parseInt(input1.value) * (parseFloat(parseInt(1) / (parseInt(input3.value) * ((parseInt(5)) / parseInt(18)))))) + " + " + input2.value + " = " + ((parseInt(input1.value) * (parseFloat(parseInt(1) / (parseInt(input3.value) * ((parseInt(5)) / parseInt(18)))))) + (parseInt(input2.value))) + " sec";
+        textarea4.textContent = "B speed = " + input1.value + "/" + ((parseInt(input1.value) * (parseFloat(parseInt(1) / (parseInt(input3.value) * ((parseInt(5)) / parseInt(18)))))) + (parseInt(input2.value))) + "* 18/5 Km/hr = " + ((parseInt(input1.value) / ((parseInt(input1.value) * (parseFloat(parseInt(1) / (parseInt(input3.value) * ((parseInt(5)) / parseInt(18)))))) + (parseInt(input2.value)))) * (parseFloat(parseInt(18) / parseInt(5)))) + " Km/hr";
         solutionpage.appendChild(textarea1);
         solutionpage.appendChild(textarea2);
         solutionpage.appendChild(textarea3);
@@ -2560,6 +2530,7 @@ function StocksQue2Ans1() {
     }
 }
 let stocksque3ans1 = true;
+
 function StocksQue3Ans1() {
     let a = document.getElementById("stocksque3ans1");
     let input1 = document.getElementById("STOCKSQUE3ANSMARKET");
@@ -2633,9 +2604,9 @@ function StocksQue5Ans1() {
         let textarea3 = document.createElement("p");
         button.textContent = "Hide"
         let r = input2.value.split(" ");
-        textarea1.textContent = " No of shares = " + input1.value + "/" + r[1] + " = " + (parseInt(input1.value) / parseInt(r[1]));
-        textarea2.textContent = "Face value = " + (parseInt(input1.value) / parseInt(r[1])) + "*" + parseInt(input2.value) + " = " + ((parseInt(input1.value) / parseInt(r[1])) * parseInt(2[0]));
-        textarea3.textContent = "Annual income = " + input3.value + "/100 * " + ((parseInt(input1.value) / parseInt(r[1])) * parseInt(2[0])) + " = " + (parseFloat(parseInt(input3.value) / parseInt(100)) * ((parseInt(input1.value) / parseInt(r[1])) * parseInt(2[0])));
+        textarea1.textContent = " No of shares = " + input1.value + "/" + r[1] + " = " + (parseInt(input1.value) / parseFloat(r[1]));
+        textarea2.textContent = "Face value = " + (parseInt(input1.value) / parseFloat(r[1])) + "*" + parseInt(input2.value) + " = " + ((parseInt(input1.value) / parseFloat(r[1])) * parseInt(r[0]));
+        textarea3.textContent = "Annual income = " + input3.value + "/100 * " + ((parseInt(input1.value) / parseFloat(r[1])) * parseInt(r[0])) + " = " + (parseFloat(parseInt(input3.value) / parseInt(100)) * ((parseInt(input1.value) / parseFloat(r[1])) * parseInt(r[0])));
         stocksque5ans1 = false
         solutionpage.appendChild(textarea1);
         solutionpage.appendChild(textarea2);
@@ -2654,8 +2625,8 @@ let stocksque6ans1 = true;
 
 function StocksQue6Ans1() {
     let a = document.getElementById("stocksque6ans1");
-    let input1 = document.getElementById("STOCKSQUE1ANSSTOCK");
-    let input2 = document.getElementById("STOCKSQUE1ANSDISCOUNT");
+    let input1 = document.getElementById("STOCKSQUE6ANSSTOCK");
+    let input2 = document.getElementById("STOCKSQUE6ANSDISCOUNT");
     let button = document.getElementById("STOCKSQUE6ANS1");
     if (stocksque6ans1 === true) {
         let solutionpage = document.getElementById("solutionstocksque6ans1");
@@ -2727,10 +2698,11 @@ function StocksQue8Ans1() {
         let textarea4 = document.createElement("p");
         button.textContent = "Hide"
         let r = input1.value.split(" ")
+        let r1 = input3.value.split("/")
         textarea1.textContent = "Investment  = (" + r[0] + " * (" + r[1] + " - " + input2.value + ")) = " + (parseInt(r[0]) * (parseInt(r[1]) - parseInt(input2.value)));
         textarea2.textContent = "Face value = " + (parseInt(r[1]) + " * " + parseInt(r[0])) + " =  " + (parseInt(r[1]) * parseInt(r[0]));
-        textarea3.textContent = "Dividend = " + input3.value + " * (" + (parseFloat((parseInt(r[1]) * parseInt(r[0])) / parseInt(100))) + ") = " + (parseInt(input3.value) * (parseFloat((parseInt(r[1]) * parseInt(r[0])) / parseInt(100))));
-        textarea4.textContent = "interest obtained = (" + (parseInt(input3.value) * (parseFloat((parseInt(r[1]) * parseInt(r[0])) / parseInt(100)))) + "/" + (parseInt(r[0]) * (parseInt(r[1]) - parseInt(input2.value))) + "* 100 = " + (((parseInt(input3.value) * (parseFloat((parseInt(r[1]) * parseInt(r[0])) / parseInt(100)))) / (parseInt(r[0]) * (parseInt(r[1]) - parseInt(input2.value)))) * parseInt(100));
+        textarea3.textContent = "Dividend = " + input3.value + " * (" + (parseFloat((parseInt(r[1]) * parseInt(r[0])) / parseInt(100))) + ") = " + (parseFloat(parseInt(r1[0]) / parseInt(r1[1])) * (parseFloat((parseInt(r[1]) * parseInt(r[0])) / parseInt(100))));
+        textarea4.textContent = "interest obtained = (" + (parseFloat(parseInt(r1[0]) / parseInt(r1[1])) * (parseFloat((parseInt(r[1]) * parseInt(r[0])) / parseInt(100)))) + "/" + (parseInt(r[0]) * (parseInt(r[1]) - parseInt(input2.value))) + "* 100 = " + (((parseFloat(parseInt(r1[0]) / parseInt(r1[1])) * (parseFloat((parseInt(r[1]) * parseInt(r[0])) / parseInt(100)))) / (parseInt(r[0]) * (parseInt(r[1]) - parseInt(input2.value)))) * parseInt(100)) + " %";
         stocksque8ans1 = false
         solutionpage.appendChild(textarea1);
         solutionpage.appendChild(textarea2);
@@ -2747,6 +2719,7 @@ function StocksQue8Ans1() {
     }
 }
 let stocksque9ans1 = true;
+
 function StocksQue9Ans1() {
     let a = document.getElementById("stocksque9ans1");
     let input1 = document.getElementById("STOCKSQUE9ANSSTOCK1");
@@ -3022,8 +2995,8 @@ function PercentageQue8Ans1() {
         button.textContent = "Hide"
         let girls = parseInt(100) - parseInt(input1.value);
         percentageque8ans1 = false;
-        textarea1.textContent = "no of % girls = 100 - " + input1.value + " = " + girls
-        textarea2.textContent = "Let the amount value  = " + girls + " % of x = " + input2.value + " = " + girls + "/ 100 * x = " + input2.value;
+        textarea1.textContent = "Girls % = 100 - " + input1.value + " = " + girls + " %";
+        textarea2.textContent = "girls % in total students(x) = " + girls + " % of x = " + input2.value + " = " + girls + "/ 100 * x = " + input2.value;
         textarea3.textContent = "No of students= (" + input2.value + " * 100)/" + girls + " = " + parseFloat((parseInt(100) * parseInt(input2.value)) / parseInt(girls))
         solutionpage.appendChild(textarea1);
         solutionpage.appendChild(textarea2);
