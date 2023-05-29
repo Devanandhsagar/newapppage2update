@@ -12,19 +12,19 @@
     <div id="sectiontopichomepage">
         <div>
             <h1 class="text-center mt-3">Select the topic</h1>
-            <div class="topic_container mt-5 " onclick="display('sectionagestopic')">
+            <div class="topic_container mt-5 pt-3 " onclick="display('sectionagestopic')">
                 <p>Ages</p>
             </div>
-            <div class="topic_container">
+            <div class="topic_container  pt-3" onclick="display('sectionavgeragetopic')">
                 <p>Average</p>
             </div>
-            <div class="topic_container">
-                <p>Speed and Time</p>
+            <div class="topic_container pt-3" onclick="display('sectionracestopic')">
+                <p>Races and Games</p>
             </div>
-            <div class="topic_container">
-                <p>Boats and Streams</p>
+            <div class="topic_container pt-3" onclick="display('sectionstockstopic')">
+                <p>Stocks and Shares</p>
             </div>
-            <div class="topic_container">
+            <div class="topic_container pt-3" onclick="display('sectionpercentagetopic')">
                 <p>Percentage</p>
             </div>
         </div>
@@ -104,6 +104,9 @@
                 youngest child ? <button class="button" onclick="display('sectionageques19')">find</button></p>
 
         </div>
+        <div class="d-flex flex-row justify-content-end">
+            <button class="btn-secondary" onclick="display('sectiontopichomepage')">back</button>
+        </div>
     </div>
     <div id="sectionageques1">
         <div class="m-3 pl-3">
@@ -181,11 +184,11 @@
     <div id="sectionageques3">
         <div class="m-3 pl-3">
             <input type="text" id="AGESQUE3ANSN" placeholder="married n years ago" />
-            <input type="text" id="AGESQUE3ANSNUMA2" placeholder="No of times num today age" />
-            <input type="text" id="AGESQUE3ANSDENOA2" placeholder="No of times deno today age" />
-            <input type="text" id="AGESQUE3ANSDNUMA1" placeholder="Daughter no of times num age" />
-            <input type="text" id="AGESQUE3ANSDDENOA2" placeholder="Daughter no of times deno age" />
-            <input type="text" id="AGESQUE3ANSN1" placeholder="Daughter age n years ago" />
+            <input type="text" id="AGESQUE3ANSNUMA2" placeholder="No of times num today age" size="35" />
+            <input type="text" id="AGESQUE3ANSDENOA2" placeholder="No of times deno today age" size="35" />
+            <input type="text" id="AGESQUE3ANSDNUMA1" placeholder="Daughter no of times num age" size="35" />
+            <input type="text" id="AGESQUE3ANSDDENOA2" placeholder="Daughter no of times deno age" size="35" />
+            <input type="text" id="AGESQUE3ANSN1" placeholder="Daughter age n years ago" size="35" />
             <div class="d-flex flex-row" id="agesque3ans1">
                 <p>1)What was her daughter’s age 3 years ago ?
                     <button class="button" onclick="AgeQue3Ans1()" id="AGEQUE3ANS1">Show</button>
@@ -228,7 +231,7 @@
     </div>
     <div id="sectionageques5">
         <div class="m-3 pl-3">
-            <input type="text" id="AGESQUE5ANSAVG" placeholder="Avg ages of man & daughter" />
+            <input type="text" id="AGESQUE5ANSAVG" placeholder="Avg ages of man & daughter" size="30" />
             <input type="text" id="AGESQUE5ANSN" placeholder="N years from now" />
             <input type="text" id="AGESQUE5ANSB1" placeholder="Ratio of man" />
             <input type="text" id="AGESQUE5ANSB2" placeholder="Ratio of daughter" />
@@ -511,9 +514,9 @@
     </div>
     <div id="sectionageques17">
         <div class="m-3 pl-3">
-            <input type="text" id="AGESQUE17ANSNOWMOTHER" placeholder="now Mother age is n times the daughter age" size="30" />
-            <input type="text" id="AGESQUE17ANSN" placeholder="After n years" />
-            <input type="text" id="AGESQUE17ANSAFTERMOTHER" placeholder="Mother age is n times the daughter age" size="30" />
+            <input type="text" id="AGESQUE17ANSNOWMOTHER" placeholder="Now Mother age is n times the daughter age" size="40" /><br />
+            <input type="text" id="AGESQUE17ANSN" placeholder="After n years" /><br />
+            <input type="text" id="AGESQUE17ANSAFTERMOTHER" placeholder="Mother age is n times the daughter age" size="37" />
             <div class="d-flex flex-row" id="agesque17ans1">
                 <p>1)The present age of the daughter is ?
                     <button class="button" onclick="AgeQue17Ans1()" id="AGEQUE17ANS1">Show</button>
@@ -564,7 +567,7 @@
             <button class="btn-secondary" onclick="display('sectionagestopic')">back</button>
         </div>
     </div>
- <div id="sectionavgeragetopic">
+    <div id="sectionavgeragetopic">
         <h1 class="heading_ages">Select type method of Question</h1>
         <div class="mt-3">
             <p class="m-5">
@@ -687,8 +690,8 @@
     </div>
     <div id="sectionaverageques4">
         <div class="m-3 pl-3">
-            <input type="text" id="AVGESQUE2ANSSHOP1" placeholder="no of books and no of cost from 1 shop with , sperator" size="50" /><br />
-            <input type="text" id="AVGESQUE2ANSSHOP2" placeholder="no of books and no of cost from 2 shop with , sperator" size="50" />
+            <input type="text" id="AVGESQUE2ANSSHOP1" placeholder="no of books and cost from 1 shop with space sperator" size="50" /><br />
+            <input type="text" id="AVGESQUE2ANSSHOP2" placeholder="no of books and cost from 2 shop with space sperator" size="50" />
             <div class="d-flex flex-row" id="avgque4ans1">
                 <p>1)What is the average price he paid per book ?
                     <button class="button" onclick="AvgQue4Ans1()" id="AVGQUE4ANS1">Show</button>
@@ -737,7 +740,7 @@
     <div id="sectionaverageques7">
         <div class="m-3 pl-3">
             <input type="text" id="AVGESQUE7ANSMEAN" placeholder="total mean or average" />
-            <input type="text" id="AVGESQUE7ANSVALUE" placeholder="no of input values with sperator by , " size="27" />
+            <input type="text" id="AVGESQUE7ANSVALUE" placeholder="give inputs by space" size="27" />
             <div class="d-flex flex-row" id="avgque7ans1">
                 <p>1)What should be the number in place of x ?
                     <button class="button" onclick="AvgQue7Ans1()" id="AVGQUE7ANS1">Show</button>
@@ -749,7 +752,7 @@
             <button class="btn-secondary" onclick="display('sectionavgeragetopic')">back</button>
         </div>
     </div>
-      <div id="sectionaverageques8">
+    <div id="sectionaverageques8">
         <div class="m-3 pl-3">
             <input type="text" id="AVGESQUE8ANSMARKS" placeholder="marks more than other 2 subjects" size="30" /><br />
             <input type="text" id="AVGESQUE8ANSAVG" placeholder="Average of three subjects" size="27" />
@@ -962,7 +965,7 @@
     </div>
     <div id="sectionracesques3">
         <div class="m-3 pl-3">
-            <input type="text" id="RACESQUE3ANSAC" placeholder="A can give B Start" size="30" />
+            <input type="text" id="RACESQUE3ANSAB" placeholder="A can give B Start" size="30" />
             <input type="text" id="RACESQUE3ANSAC" placeholder="A can give C Start" size="30" />
             <div class="d-flex flex-row" id="racesque3ans1">
                 <p>1) The start which B can allow C ?
@@ -978,7 +981,7 @@
     <div id="sectionracesques4">
         <div class="m-3 pl-3">
             <input type="text" id="RACESQUE4ANSLENGTH" placeholder="Give 3 races lengths with space spertaor" size="34" />
-            <input type="text" id="RACESQUE4ANSBC" placeholder="A can beat B n meters" size="30" />
+            <input type="text" id="RACESQUE4ANSAB" placeholder="A can beat B n meters" size="30" /><br />
             <input type="text" id="RACESQUE4ANSBC" placeholder="B can beat C n meters" size="30" />
             <div class="d-flex flex-row" id="racesque4ans1">
                 <p>1) how many metres does A beat C ?
@@ -993,8 +996,10 @@
     </div>
     <div id="sectionracesques5">
         <div class="m-3 pl-3">
-            <input type="text" id="RACESQUE1ANSAB" placeholder="A & B length of race in meters" size="33" />
-            <input type="text" id="RACESQUE1ANSBC" placeholder="B & C length of race in meters" size="30" />
+            <input type="text" id="RACESQUE5ANSAB" placeholder="A beats B by n seconds" size="27" />
+            <input type="text" id="RACESQUE5ANSBC" placeholder="B beats C n seconds" size="27" />
+            <input type="text" id="RACESQUE5ANSAC" placeholder="A beats C by n meters" size="27" />
+            <input type="text" id="RACESQUE5ANSN" placeholder="n kilometer convert meter" size="30" />
             <div class="d-flex flex-row" id="racesque5ans1">
                 <p>1)the time taken by A to run 1 kilometre ?
                     <button class="button" onclick="RacesQue5Ans1()" id="RACESQUE5ANS1">Show</button>
@@ -1008,10 +1013,11 @@
     </div>
     <div id="sectionracesques6">
         <div class="m-3 pl-3">
-            <input type="text" id="RACESQUE1ANSAB" placeholder="A & B length of race in meters" size="30" />
-            <input type="text" id="RACESQUE1ANSBC" placeholder="B & C length of race in meters" size="30" />
+            <input type="text" id="RACESQUE6ANSLENGTH" placeholder="length of race in meters" size="30" />
+            <input type="text" id="RACESQUE6ANSSECONDS" placeholder="A defeated B by n seconds" size="30" />
+            <input type="text" id="RACESQUE6ANSSPEED" placeholder="A speed is " size="30" />
             <div class="d-flex flex-row" id="racesque6ans1">
-                <p>1) how many metres does A beat C ?
+                <p>1)the speed of B Km/hr ?
                     <button class="button" onclick="RacesQue6Ans1()" id="RACESQUE6ANS1">Show</button>
                 </p>
                 <div id="solutionracesque6ans1"></div>
@@ -1023,10 +1029,11 @@
     </div>
     <div id="sectionracesques7">
         <div class="m-3 pl-3">
-            <input type="text" id="RACESQUE1ANSAB" placeholder="A & B length of race in meters" size="30" />
-            <input type="text" id="RACESQUE1ANSBC" placeholder="B & C length of race in meters" size="30" />
+            <input type="text" id="RACESQUE7ANSLENGTH" placeholder="length of race in meters" size="30" />
+            <input type="text" id="RACESQUE7ANSBA" placeholder="B can give start n meters to A" size="30" />
+            <input type="text" id="RACESQUE7ANSBC" placeholder="C can give start n meters to B" size="30" />
             <div class="d-flex flex-row" id="racesque7ans1">
-                <p>1) how many metres does A beat C ?
+                <p>1)The start that C can give to A in the same race is ?
                     <button class="button" onclick="RacesQue7Ans1()" id="RACESQUE7ANS1">Show</button>
                 </p>
                 <div id="solutionracesque7ans1"></div>
@@ -1038,10 +1045,11 @@
     </div>
     <div id="sectionracesques8">
         <div class="m-3 pl-3">
-            <input type="text" id="RACESQUE1ANSAB" placeholder="A & B length of race in meters" size="30" />
-            <input type="text" id="RACESQUE1ANSBC" placeholder="B & C length of race in meters" size="30" />
+            <input type="text" id="RACESQUE8ANSLENGTH" placeholder="length of race in meters" size="30" />
+            <input type="text" id="RACESQUE8ANSRATIO" placeholder="Ratio A & B give with space sperator" size="30" />
+            <input type="text" id="RACESQUE8ANSA" placeholder="A has start meters" size="30" />
             <div class="d-flex flex-row" id="racesque8ans1">
-                <p>1) how many metres does A beat C ?
+                <p>1) then A wins by ?
                     <button class="button" onclick="RacesQue8Ans1()" id="RACESQUE8ANS1">Show</button>
                 </p>
                 <div id="solutionracesque8ans1"></div>
@@ -1051,7 +1059,7 @@
             <button class="btn-secondary" onclick="display('sectionracestopic')">back</button>
         </div>
     </div>
-     <div id="sectionstockstopic">
+    <div id="sectionstockstopic">
         <h1 class="heading_ages">Select type method of Question</h1>
         <div class="mt-3">
             <p class="m-5">
@@ -1148,7 +1156,7 @@
     <div id="sectionstocksques5">
         <div class="m-3 pl-3">
             <input type="text" id="STOCKSQUE5ANSINVESTED" placeholder="Man invested" /><br />
-            <input type="text" id="STOCKSQUE5ANSSHARES" placeholder="no of shares and quoted at n give values with space sperator" size="60" /><br />
+            <input type="text" id="STOCKSQUE5ANSSHARES" placeholder="Each share value and quoted at's market values with space sperator" size="60" /><br />
             <input type="text" id="STOCKSQUE5ANSDIVIDEND" placeholder="dividend % id" />
             <div class="d-flex flex-row" id="stocksque5ans1">
                 <p>1) His annual income is ?
@@ -1163,8 +1171,8 @@
     </div>
     <div id="sectionstocksques6">
         <div class="m-3 pl-3">
-            <input type="text" id="STOCKSQUE1ANSSTOCK" placeholder="Enter the stock %" />
-            <input type="text" id="STOCKSQUE1ANSDISCOUNT" placeholder="Enter the yeids % " />
+            <input type="text" id="STOCKSQUE6ANSSTOCK" placeholder="Enter the stock %" />
+            <input type="text" id="STOCKSQUE6ANSDISCOUNT" placeholder="Enter the yeids % " />
             <div class="d-flex flex-row" id="stocksque6ans1">
                 <p>1) The market value of the stock is ?
                     <button class="button" onclick="StocksQue6Ans1()" id="STOCKSQUE6ANS1">Show</button>
@@ -1239,7 +1247,7 @@
             <button class="btn-secondary" onclick="display('sectionstockstopic')">back</button>
         </div>
     </div>
-     <div id="sectionpercentagetopic">
+    <div id="sectionpercentagetopic">
         <h1 class="heading_ages">Select type method of Question</h1>
         <div class="mt-3">
             <p class="m-5">
