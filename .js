@@ -2560,7 +2560,6 @@ function StocksQue2Ans1() {
     }
 }
 let stocksque3ans1 = true;
-
 function StocksQue3Ans1() {
     let a = document.getElementById("stocksque3ans1");
     let input1 = document.getElementById("STOCKSQUE3ANSMARKET");
@@ -2573,11 +2572,10 @@ function StocksQue3Ans1() {
         let textarea2 = document.createElement("p");
         let textarea3 = document.createElement("p");
         button.textContent = "Hide"
-        let r = input2.value.split(" ")
-        textarea1.textContent = " A as cover = " + input1.value + " - " + input3.value + " = " + (parseInt(input1.value) - parseInt(input3.value)) + " m";
-        textarea2.textContent = "While A covers " + (parseInt(input1.value) - parseInt(input3.value)) + " , B covers = (" + r[1] + "/" + r[0] + ")*(" + input1.value + ") = " + (parseFloat(parseInt(r[1]) / parseInt(r[0])) * (parseInt(input1.value) - parseInt(input3.value)));
-        textarea3.textContent = "A wins by = (" + input1.value + " - " + (parseFloat(parseInt(r[1]) / parseInt(r[0])) * parseInt(input1.value)) + ") = " + (parseInt(input1.value) - (parseFloat(parseInt(r[1]) / parseInt(r[0])) * (parseInt(input1.value) - parseInt(input3.value)))) + " m";
-        stocksque3ans1 = false
+        textarea1.textContent = "Cost price = " + input1.value + " + " + input3.value + "/100 * " + parseInt(input1.value);
+        textarea2.textContent = "cost price = " + (parseInt(input1.value) + ((parseInt(input3.value) / parseInt(100)) * parseInt(input1.value)));
+        textarea3.textContent = "No of shares = " + input2.value + "/" + (parseInt(input1.value) + ((parseInt(input3.value) / parseInt(100)) * parseInt(input1.value))) + " = " + (parseInt(input2.value) / (parseInt(input1.value) + ((parseInt(input3.value) / parseInt(100)) * parseInt(input1.value))));
+        stocksque3ans1 = false;
         solutionpage.appendChild(textarea1);
         solutionpage.appendChild(textarea2);
         solutionpage.appendChild(textarea3);
@@ -2603,10 +2601,9 @@ function StocksQue4Ans1() {
         let textarea2 = document.createElement("p");
         let textarea3 = document.createElement("p");
         button.textContent = "Hide"
-        let r = input2.value.split(" ")
-        textarea1.textContent = " A as cover = " + input1.value + " - " + input3.value + " = " + (parseInt(input1.value) - parseInt(input3.value)) + " m";
-        textarea2.textContent = "While A covers " + (parseInt(input1.value) - parseInt(input3.value)) + " , B covers = (" + r[1] + "/" + r[0] + ")*(" + input1.value + ") = " + (parseFloat(parseInt(r[1]) / parseInt(r[0])) * (parseInt(input1.value) - parseInt(input3.value)));
-        textarea3.textContent = "A wins by = (" + input1.value + " - " + (parseFloat(parseInt(r[1]) / parseInt(r[0])) * parseInt(input1.value)) + ") = " + (parseInt(input1.value) - (parseFloat(parseInt(r[1]) / parseInt(r[0])) * (parseInt(input1.value) - parseInt(input3.value)))) + " m";
+        textarea1.textContent = "Money invest " + input2.value + ", income dervied =  " + input1.value;
+        textarea2.textContent = "By investing 100 , income dervied = " + input2.value + "/" + input1.value + ") * 100 ) = " + ((parseInt(input2.value) / parseInt(input1.value)) * parseInt(100));
+        textarea3.textContent = "interest obtained = " + ((parseInt(input2.value) / parseInt(input1.value)) * parseInt(100));
         stocksque4ans1 = false
         solutionpage.appendChild(textarea1);
         solutionpage.appendChild(textarea2);
@@ -2635,10 +2632,10 @@ function StocksQue5Ans1() {
         let textarea2 = document.createElement("p");
         let textarea3 = document.createElement("p");
         button.textContent = "Hide"
-        let r = input2.value.split(" ")
-        textarea1.textContent = " A as cover = " + input1.value + " - " + input3.value + " = " + (parseInt(input1.value) - parseInt(input3.value)) + " m";
-        textarea2.textContent = "While A covers " + (parseInt(input1.value) - parseInt(input3.value)) + " , B covers = (" + r[1] + "/" + r[0] + ")*(" + input1.value + ") = " + (parseFloat(parseInt(r[1]) / parseInt(r[0])) * (parseInt(input1.value) - parseInt(input3.value)));
-        textarea3.textContent = "A wins by = (" + input1.value + " - " + (parseFloat(parseInt(r[1]) / parseInt(r[0])) * parseInt(input1.value)) + ") = " + (parseInt(input1.value) - (parseFloat(parseInt(r[1]) / parseInt(r[0])) * (parseInt(input1.value) - parseInt(input3.value)))) + " m";
+        let r = input2.value.split(" ");
+        textarea1.textContent = " No of shares = " + input1.value + "/" + r[1] + " = " + (parseInt(input1.value) / parseInt(r[1]));
+        textarea2.textContent = "Face value = " + (parseInt(input1.value) / parseInt(r[1])) + "*" + parseInt(input2.value) + " = " + ((parseInt(input1.value) / parseInt(r[1])) * parseInt(2[0]));
+        textarea3.textContent = "Annual income = " + input3.value + "/100 * " + ((parseInt(input1.value) / parseInt(r[1])) * parseInt(2[0])) + " = " + (parseFloat(parseInt(input3.value) / parseInt(100)) * ((parseInt(input1.value) / parseInt(r[1])) * parseInt(2[0])));
         stocksque5ans1 = false
         solutionpage.appendChild(textarea1);
         solutionpage.appendChild(textarea2);
@@ -2666,10 +2663,9 @@ function StocksQue6Ans1() {
         let textarea2 = document.createElement("p");
         let textarea3 = document.createElement("p");
         button.textContent = "Hide"
-        let r = input2.value.split(" ")
-        textarea1.textContent = " A as cover = " + input1.value + " - " + input3.value + " = " + (parseInt(input1.value) - parseInt(input3.value)) + " m";
-        textarea2.textContent = "While A covers " + (parseInt(input1.value) - parseInt(input3.value)) + " , B covers = (" + r[1] + "/" + r[0] + ")*(" + input1.value + ") = " + (parseFloat(parseInt(r[1]) / parseInt(r[0])) * (parseInt(input1.value) - parseInt(input3.value)));
-        textarea3.textContent = "A wins by = (" + input1.value + " - " + (parseFloat(parseInt(r[1]) / parseInt(r[0])) * parseInt(input1.value)) + ") = " + (parseInt(input1.value) - (parseFloat(parseInt(r[1]) / parseInt(r[0])) * (parseInt(input1.value) - parseInt(input3.value)))) + " m";
+        textarea1.textContent = " For an income of " + input2.value + " invesment = 100 ";
+        textarea2.textContent = "For an income of  " + input1.value + " invesment = ((" + 100 + "/" + input2.value + ")*" + input1.value + ") = " + (parseFloat(parseInt(100) / parseInt(input2.value)) * (parseInt(input1.value)));
+        textarea3.textContent = "Market value of 100 stock = " + (parseFloat(parseInt(100) / parseInt(input2.value)) * (parseInt(input1.value)));
         stocksque6ans1 = false
         solutionpage.appendChild(textarea1);
         solutionpage.appendChild(textarea2);
@@ -2698,10 +2694,9 @@ function StocksQue7Ans1() {
         let textarea2 = document.createElement("p");
         let textarea3 = document.createElement("p");
         button.textContent = "Hide"
-        let r = input2.value.split(" ")
-        textarea1.textContent = " A as cover = " + input1.value + " - " + input3.value + " = " + (parseInt(input1.value) - parseInt(input3.value)) + " m";
-        textarea2.textContent = "While A covers " + (parseInt(input1.value) - parseInt(input3.value)) + " , B covers = (" + r[1] + "/" + r[0] + ")*(" + input1.value + ") = " + (parseFloat(parseInt(r[1]) / parseInt(r[0])) * (parseInt(input1.value) - parseInt(input3.value)));
-        textarea3.textContent = "A wins by = (" + input1.value + " - " + (parseFloat(parseInt(r[1]) / parseInt(r[0])) * parseInt(input1.value)) + ") = " + (parseInt(input1.value) - (parseFloat(parseInt(r[1]) / parseInt(r[0])) * (parseInt(input1.value) - parseInt(input3.value)))) + " m";
+        textarea1.textContent = "By investing " + input1.value + ",income = " + input3.value;
+        textarea2.textContent = "By investing " + input2.value + " income = " + input3.value + "/" + input1.value + " *" + input2.value + " = " + (parseFloat(parseInt(input3.value) / parseInt(input1.value)) * (parseInt(input2.value)));
+        textarea3.textContent = "Dividend = " + (parseFloat(parseInt(input3.value) / parseInt(input1.value)) * (parseInt(input2.value))) + " %";
         stocksque7ans1 = false
         solutionpage.appendChild(textarea1);
         solutionpage.appendChild(textarea2);
@@ -2729,15 +2724,18 @@ function StocksQue8Ans1() {
         let textarea1 = document.createElement("p");
         let textarea2 = document.createElement("p");
         let textarea3 = document.createElement("p");
+        let textarea4 = document.createElement("p");
         button.textContent = "Hide"
-        let r = input2.value.split(" ")
-        textarea1.textContent = " A as cover = " + input1.value + " - " + input3.value + " = " + (parseInt(input1.value) - parseInt(input3.value)) + " m";
-        textarea2.textContent = "While A covers " + (parseInt(input1.value) - parseInt(input3.value)) + " , B covers = (" + r[1] + "/" + r[0] + ")*(" + input1.value + ") = " + (parseFloat(parseInt(r[1]) / parseInt(r[0])) * (parseInt(input1.value) - parseInt(input3.value)));
-        textarea3.textContent = "A wins by = (" + input1.value + " - " + (parseFloat(parseInt(r[1]) / parseInt(r[0])) * parseInt(input1.value)) + ") = " + (parseInt(input1.value) - (parseFloat(parseInt(r[1]) / parseInt(r[0])) * (parseInt(input1.value) - parseInt(input3.value)))) + " m";
+        let r = input1.value.split(" ")
+        textarea1.textContent = "Investment  = (" + r[0] + " * (" + r[1] + " - " + input2.value + ")) = " + (parseInt(r[0]) * (parseInt(r[1]) - parseInt(input2.value)));
+        textarea2.textContent = "Face value = " + (parseInt(r[1]) + " * " + parseInt(r[0])) + " =  " + (parseInt(r[1]) * parseInt(r[0]));
+        textarea3.textContent = "Dividend = " + input3.value + " * (" + (parseFloat((parseInt(r[1]) * parseInt(r[0])) / parseInt(100))) + ") = " + (parseInt(input3.value) * (parseFloat((parseInt(r[1]) * parseInt(r[0])) / parseInt(100))));
+        textarea4.textContent = "interest obtained = (" + (parseInt(input3.value) * (parseFloat((parseInt(r[1]) * parseInt(r[0])) / parseInt(100)))) + "/" + (parseInt(r[0]) * (parseInt(r[1]) - parseInt(input2.value))) + "* 100 = " + (((parseInt(input3.value) * (parseFloat((parseInt(r[1]) * parseInt(r[0])) / parseInt(100)))) / (parseInt(r[0]) * (parseInt(r[1]) - parseInt(input2.value)))) * parseInt(100));
         stocksque8ans1 = false
         solutionpage.appendChild(textarea1);
         solutionpage.appendChild(textarea2);
         solutionpage.appendChild(textarea3);
+        solutionpage.appendChild(textarea4);
     } else {
         let solutionpage = document.getElementById("solutionstocksque8ans1");
         button.textContent = "Show"
