@@ -2809,3 +2809,232 @@ function StocksQue10Ans1() {
         a.appendChild(again)
     }
 }
+let percentageque1ans1 = true;
+
+function PercentageQue1Ans1() {
+    let a = document.getElementById("percentageque1ans1");
+    let input1 = document.getElementById("PERCENTAGEQUE1ANSVALUE");
+    let button = document.getElementById("PERCENTAGEQUE1ANS1");
+    if (percentageque1ans1 === true) {
+        let solutionpage = document.getElementById("solutionpercentageque1ans1");
+        let textarea1 = document.createElement("p");
+        let textarea2 = document.createElement("p");
+        button.textContent = "Hide"
+        let r = input1.value.split("/")
+        textarea1.textContent = "percentage = (" + r[0] + "/" + r[1] + ") * 100 ";
+        textarea2.textContent = "percentage = " + (parseFloat(parseInt(r[0]) / parseInt(r[1])) * parseInt(100)) + " %"
+        percentageque1ans1 = false
+        solutionpage.appendChild(textarea1);
+        solutionpage.appendChild(textarea2);
+    } else {
+        let solutionpage = document.getElementById("solutionpercentageque1ans1");
+        button.textContent = "Show"
+        percentageque1ans1 = true
+        a.removeChild(solutionpage)
+        let again = document.createElement("div");
+        again.id = "solutionpercentageque1ans1";
+        a.appendChild(again)
+    }
+}
+let percentageque2ans1 = true;
+
+function PercentageQue2Ans1() {
+    let a = document.getElementById("percentageque2ans1");
+    let input1 = document.getElementById("PERCENTAGEQUE2ANSVALUE");
+    let button = document.getElementById("PERCENTAGEQUE2ANS1");
+    if (percentageque2ans1 === true) {
+        let solutionpage = document.getElementById("solutionpercentageque2ans1");
+        let textarea1 = document.createElement("p");
+        let textarea2 = document.createElement("p");
+        button.textContent = "Hide"
+        let r = input1.value.split(" ")
+        textarea1.textContent = r[0] + " %  from the amount = (" + r[0] + "/ 100) * " + r[1];
+        textarea2.textContent = r[0] + " % from  amount = " + (parseFloat(parseInt(r[0]) / parseInt(100)) * parseInt(r[1]));
+        percentageque2ans1 = false
+        solutionpage.appendChild(textarea1);
+        solutionpage.appendChild(textarea2);
+    } else {
+        let solutionpage = document.getElementById("solutionpercentageque2ans1");
+        button.textContent = "Show"
+        percentageque2ans1 = true
+        a.removeChild(solutionpage)
+        let again = document.createElement("div");
+        again.id = "solutionpercentageque2ans1";
+        a.appendChild(again)
+    }
+}
+let percentageque3ans1 = true;
+
+function PercentageQue3Ans1() {
+    let a = document.getElementById("percentageque3ans1");
+    let input1 = document.getElementById("PERCENTAGEQUE3ANSVALUE1");
+    let input2 = document.getElementById("PERCENTAGEQUE3ANSVALUE2");
+    let button = document.getElementById("PERCENTAGEQUE3ANS1");
+    if (percentageque3ans1 === true) {
+        let solutionpage = document.getElementById("solutionpercentageque3ans1");
+        let textarea1 = document.createElement("p");
+        let textarea2 = document.createElement("p");
+        button.textContent = "Hide"
+        textarea1.textContent = "Requried percentage = ((" + input1.value + "/" + input2.value + ") * 100) %"
+        textarea2.textContent = "Requried percentage = " + Math.round(parseFloat(parseInt(input1.value) / parseInt(input2.value)) * parseInt(100)) + " %";
+        percentageque3ans1 = false
+        solutionpage.appendChild(textarea1);
+        solutionpage.appendChild(textarea2);
+    } else {
+        let solutionpage = document.getElementById("solutionpercentageque3ans1");
+        button.textContent = "Show"
+        percentageque3ans1 = true
+        a.removeChild(solutionpage)
+        let again = document.createElement("div");
+        again.id = "solutionpercentageque3ans1";
+        a.appendChild(again)
+    }
+}
+let percentageque4ans1 = true;
+
+function PercentageQue4Ans1() {
+    let a = document.getElementById("percentageque4ans1");
+    let input1 = document.getElementById("PERCENTAGEQUE4ANSTAX");
+    let input2 = document.getElementById("PERCENTAGEQUE4ANSWORTH");
+    let button = document.getElementById("PERCENTAGEQUE4ANS1");
+    if (percentageque4ans1 === true) {
+        let solutionpage = document.getElementById("solutionpercentageque4ans1");
+        let textarea1 = document.createElement("p");
+        let textarea2 = document.createElement("p");
+        button.textContent = "Hide"
+        textarea1.textContent = "Rate of sales tax = ((" + input1.value + "/" + input2.value + ") * 100) %"
+        textarea2.textContent = "Rate of sales tax = " + Math.round(parseFloat(parseInt(input1.value) / parseInt(input2.value)) * parseInt(100)) + " %";
+        percentageque4ans1 = false
+        solutionpage.appendChild(textarea1);
+        solutionpage.appendChild(textarea2);
+    } else {
+        let solutionpage = document.getElementById("solutionpercentageque4ans1");
+        button.textContent = "Show"
+        percentageque3ans1 = true
+        a.removeChild(solutionpage)
+        let again = document.createElement("div");
+        again.id = "solutionpercentageque4ans1";
+        a.appendChild(again)
+    }
+}
+let percentageque5ans1 = true;
+
+function PercentageQue5Ans1() {
+    let a = document.getElementById("percentageque5ans1");
+    let input1 = document.getElementById("PERCENTAGEQUE5ANSVALUE1");
+    let input2 = document.getElementById("PERCENTAGEQUE5ANSVALUE2");
+    let input3 = document.getElementById("PERCENTAGEQUE5ANSVALUE3");
+    let button = document.getElementById("PERCENTAGEQUE5ANS1");
+    if (percentageque5ans1 === true) {
+        let solutionpage = document.getElementById("solutionpercentageque5ans1");
+        let textarea1 = document.createElement("p");
+        let textarea2 = document.createElement("p");
+        let textarea3 = document.createElement("p");
+        button.textContent = "Hide"
+        let r1 = input1.value.split(" ")
+        let r2 = input2.value.split(" ")
+        textarea1.textContent = input3.value + " %  of = ((" + r1[0] + "/ 100) * " + r1[1] + ") + (" + r2[0] + "/ 100) * " + r2[1] + ") = " + input3.value + "/100";
+        textarea2.textContent = input3.value + " % of = " + (parseFloat(parseInt(r1[0]) / parseInt(100)) * parseInt(r1[1])) + " + " + (parseFloat(parseInt(r2[0]) / parseInt(100)) * parseInt(r2[1])) + " = " + parseFloat(parseInt(input3.value) / parseInt(100));
+        textarea3.textContent = input3.value + " % of x = " + (((parseFloat(parseInt(r1[0]) / parseInt(100)) * parseInt(r1[1])) + (parseFloat(parseInt(r2[0]) / parseInt(100)) * parseInt(r2[1]))) / (parseFloat(parseInt(input3.value) / parseInt(100))));
+        percentageque5ans1 = false
+        solutionpage.appendChild(textarea1);
+        solutionpage.appendChild(textarea2);
+        solutionpage.appendChild(textarea3);
+    } else {
+        let solutionpage = document.getElementById("solutionpercentageque5ans1");
+        button.textContent = "Show"
+        percentageque5ans1 = true
+        a.removeChild(solutionpage)
+        let again = document.createElement("div");
+        again.id = "solutionpercentageque5ans1";
+        a.appendChild(again)
+    }
+}
+let percentageque6ans1 = true;
+
+function PercentageQue6Ans1() {
+    let a = document.getElementById("percentageque6ans1");
+    let input1 = document.getElementById("PERCENTAGEQUE6ANSVALUE1");
+    let input2 = document.getElementById("PERCENTAGEQUE6ANSVALUE2");
+    let button = document.getElementById("PERCENTAGEQUE6ANS1");
+    if (percentageque6ans1 === true) {
+        let solutionpage = document.getElementById("solutionpercentageque6ans1");
+        let textarea1 = document.createElement("p");
+        let textarea2 = document.createElement("p");
+        button.textContent = "Hide"
+        percentageque6ans1 = false;
+        textarea1.textContent = "Let the amount value  = " + input1.value + " % of x = " + input2.value + " = " + input1.value + "/ 100 * x = " + input2.value;
+        textarea2.textContent = "Amount of x = (" + input2.value + " * 100)/" + input1.value + " = " + parseFloat((parseInt(100) * parseInt(input2.value)) / parseInt(input1.value))
+        solutionpage.appendChild(textarea1);
+        solutionpage.appendChild(textarea2);
+    } else {
+        let solutionpage = document.getElementById("solutionpercentageque6ans1");
+        button.textContent = "Show"
+        percentageque6ans1 = true
+        a.removeChild(solutionpage)
+        let again = document.createElement("div");
+        again.id = "solutionpercentageque6ans1";
+        a.appendChild(again)
+    }
+}
+let percentageque7ans1 = true;
+
+function PercentageQue7Ans1() {
+    let a = document.getElementById("percentageque7ans1");
+    let input1 = document.getElementById("PERCENTAGEQUE7ANSVALUE1");
+    let input2 = document.getElementById("PERCENTAGEQUE7ANSVALUE2");
+    let button = document.getElementById("PERCENTAGEQUE7ANS1");
+    if (percentageque7ans1 === true) {
+        let solutionpage = document.getElementById("solutionpercentageque7ans1");
+        let textarea1 = document.createElement("p");
+        let textarea2 = document.createElement("p");
+        let textarea3 = document.createElement("p");
+        button.textContent = "Hide"
+        percentageque7ans1 = false;
+        textarea1.textContent = "Let t Nupur’s annual salary = " + input1.value + " % of x = " + input2.value + " = " + input1.value + "/ 100 * x = " + input2.value;
+        textarea2.textContent = "Nupur’s annual salary = (" + input2.value + " * 100)/" + input1.value + " = " + (parseFloat((parseInt(100) * parseInt(input2.value)) / parseInt(input1.value)));
+        textarea3.textContent = "Nupur.s monthly income = " + (parseFloat((parseInt(100) * parseInt(input2.value)) / parseInt(input1.value))) + "/ 12 = " + ((parseFloat((parseInt(100) * parseInt(input2.value)) / parseInt(input1.value))) / parseInt(12));
+        solutionpage.appendChild(textarea1);
+        solutionpage.appendChild(textarea2);
+        solutionpage.appendChild(textarea3);
+    } else {
+        let solutionpage = document.getElementById("solutionpercentageque7ans1");
+        button.textContent = "Show"
+        percentageque7ans1 = true
+        a.removeChild(solutionpage)
+        let again = document.createElement("div");
+        again.id = "solutionpercentageque7ans1";
+        a.appendChild(again)
+    }
+}
+let percentageque8ans1 = true;
+
+function PercentageQue8Ans1() {
+    let a = document.getElementById("percentageque8ans1");
+    let input1 = document.getElementById("PERCENTAGEQUE8ANSVALUE1");
+    let input2 = document.getElementById("PERCENTAGEQUE8ANSVALUE2");
+    let button = document.getElementById("PERCENTAGEQUE8ANS1");
+    if (percentageque8ans1 === true) {
+        let solutionpage = document.getElementById("solutionpercentageque8ans1");
+        let textarea1 = document.createElement("p");
+        let textarea2 = document.createElement("p");
+        let textarea3 = document.createElement("p");
+        button.textContent = "Hide"
+        let girls = parseInt(100) - parseInt(input1.value);
+        percentageque8ans1 = false;
+        textarea1.textContent = "no of % girls = 100 - " + input1.value + " = " + girls
+        textarea2.textContent = "Let the amount value  = " + girls + " % of x = " + input2.value + " = " + girls + "/ 100 * x = " + input2.value;
+        textarea3.textContent = "No of students= (" + input2.value + " * 100)/" + girls + " = " + parseFloat((parseInt(100) * parseInt(input2.value)) / parseInt(girls))
+        solutionpage.appendChild(textarea1);
+        solutionpage.appendChild(textarea2);
+        solutionpage.appendChild(textarea3);
+    } else {
+        let solutionpage = document.getElementById("solutionpercentageque8ans1");
+        button.textContent = "Show"
+        percentageque8ans1 = true
+        a.removeChild(solutionpage)
+        let again = document.createElement("div");
+        again.id = "solutionpercentageque8ans1";
+        a.appendChild(again)
+    }
+}
